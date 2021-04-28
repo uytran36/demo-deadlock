@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SQL
+namespace SQL.nv.chuNha
 {
-    public partial class ctietKhachHang : Form
+    public partial class dsHopDong : Form
     {
-        public ctietKhachHang()
+        public dsHopDong()
         {
             InitializeComponent();
         }

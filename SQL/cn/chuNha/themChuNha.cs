@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SQL
+namespace SQL.cn.chuNha
 {
-    public partial class ctietKhachHang : Form
+    public partial class themChuNha : Form
     {
-        public ctietKhachHang()
+        public themChuNha()
         {
             InitializeComponent();
-        }
-
-        private void labelHello_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
