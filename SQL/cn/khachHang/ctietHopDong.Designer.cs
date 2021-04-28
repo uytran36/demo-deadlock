@@ -160,9 +160,9 @@
             this.labelHello.AutoSize = true;
             this.labelHello.Location = new System.Drawing.Point(12, 24);
             this.labelHello.Name = "labelHello";
-            this.labelHello.Size = new System.Drawing.Size(82, 13);
+            this.labelHello.Size = new System.Drawing.Size(124, 13);
             this.labelHello.TabIndex = 48;
-            this.labelHello.Text = "Xin chào, NV01";
+            this.labelHello.Text = "Xin chào, CHINHANH01";
             // 
             // btnOwner
             // 
