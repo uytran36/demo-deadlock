@@ -39,7 +39,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // labelHello
+            // labelHello = Xin chao
             // 
             this.labelHello.AutoSize = true;
             this.labelHello.Location = new System.Drawing.Point(12, 12);
