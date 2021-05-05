@@ -16,5 +16,10 @@ namespace SQL
         {
             InitializeComponent();
         }
+
+        private void labelHello_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

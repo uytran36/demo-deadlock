@@ -41,36 +41,40 @@
             // 
             // btnLogout
             // 
-            this.btnLogout.Location = new System.Drawing.Point(713, 12);
+            this.btnLogout.Location = new System.Drawing.Point(951, 15);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(75, 23);
+            this.btnLogout.Size = new System.Drawing.Size(100, 28);
             this.btnLogout.TabIndex = 1;
             this.btnLogout.Text = "Đăng xuất";
             this.btnLogout.UseVisualStyleBackColor = true;
             // 
             // btnCus
             // 
-            this.btnCus.Location = new System.Drawing.Point(12, 47);
+            this.btnCus.Location = new System.Drawing.Point(16, 58);
+            this.btnCus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCus.Name = "btnCus";
-            this.btnCus.Size = new System.Drawing.Size(260, 52);
+            this.btnCus.Size = new System.Drawing.Size(347, 64);
             this.btnCus.TabIndex = 2;
             this.btnCus.Text = "Khách hàng";
             this.btnCus.UseVisualStyleBackColor = true;
             // 
             // btnPost
             // 
-            this.btnPost.Location = new System.Drawing.Point(278, 47);
+            this.btnPost.Location = new System.Drawing.Point(371, 58);
+            this.btnPost.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPost.Name = "btnPost";
-            this.btnPost.Size = new System.Drawing.Size(268, 52);
+            this.btnPost.Size = new System.Drawing.Size(357, 64);
             this.btnPost.TabIndex = 3;
             this.btnPost.Text = "Bài đăng";
             this.btnPost.UseVisualStyleBackColor = true;
             // 
             // btnOwner
             // 
-            this.btnOwner.Location = new System.Drawing.Point(552, 47);
+            this.btnOwner.Location = new System.Drawing.Point(736, 58);
+            this.btnOwner.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnOwner.Name = "btnOwner";
-            this.btnOwner.Size = new System.Drawing.Size(236, 52);
+            this.btnOwner.Size = new System.Drawing.Size(315, 64);
             this.btnOwner.TabIndex = 4;
             this.btnOwner.Text = "Chủ nhà";
             this.btnOwner.UseVisualStyleBackColor = true;
@@ -78,25 +82,29 @@
             // labelList
             // 
             this.labelList.AutoSize = true;
-            this.labelList.Location = new System.Drawing.Point(12, 113);
+            this.labelList.Location = new System.Drawing.Point(16, 139);
+            this.labelList.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelList.Name = "labelList";
-            this.labelList.Size = new System.Drawing.Size(119, 13);
+            this.labelList.Size = new System.Drawing.Size(154, 17);
             this.labelList.TabIndex = 5;
             this.labelList.Text = "Danh sách khách hàng";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 141);
+            this.dataGridView1.Location = new System.Drawing.Point(20, 174);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(773, 297);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(1031, 366);
             this.dataGridView1.TabIndex = 6;
             // 
             // btnUser
             // 
-            this.btnUser.Location = new System.Drawing.Point(632, 12);
+            this.btnUser.Location = new System.Drawing.Point(843, 15);
+            this.btnUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnUser.Name = "btnUser";
-            this.btnUser.Size = new System.Drawing.Size(75, 23);
+            this.btnUser.Size = new System.Drawing.Size(100, 28);
             this.btnUser.TabIndex = 1;
             this.btnUser.Text = "Cá nhân";
             this.btnUser.UseVisualStyleBackColor = true;
@@ -104,17 +112,19 @@
             // labelHello
             // 
             this.labelHello.AutoSize = true;
-            this.labelHello.Location = new System.Drawing.Point(12, 9);
+            this.labelHello.Location = new System.Drawing.Point(16, 15);
+            this.labelHello.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelHello.Name = "labelHello";
-            this.labelHello.Size = new System.Drawing.Size(82, 13);
+            this.labelHello.Size = new System.Drawing.Size(106, 17);
             this.labelHello.TabIndex = 7;
             this.labelHello.Text = "Xin chào, NV01";
+            this.labelHello.Click += new System.EventHandler(this.labelHello_Click);
             // 
-            // Form2
+            // dsKhachHang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.labelHello);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.labelList);
@@ -123,7 +133,8 @@
             this.Controls.Add(this.btnCus);
             this.Controls.Add(this.btnUser);
             this.Controls.Add(this.btnLogout);
-            this.Name = "Form2";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "dsKhachHang";
             this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

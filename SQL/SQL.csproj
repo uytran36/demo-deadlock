@@ -46,6 +46,54 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cn\chuNha\ctietChuNha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cn\chuNha\ctietChuNha.Designer.cs">
+      <DependentUpon>ctietChuNha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cn\chuNha\ctietHopDong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cn\chuNha\ctietHopDong.Designer.cs">
+      <DependentUpon>ctietHopDong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cn\chuNha\dsChuNha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cn\chuNha\dsChuNha.Designer.cs">
+      <DependentUpon>dsChuNha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cn\chuNha\dsHopDongCN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cn\chuNha\dsHopDongCN.Designer.cs">
+      <DependentUpon>dsHopDongCN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cn\chuNha\dsLichSuBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cn\chuNha\dsLichSuBan.Designer.cs">
+      <DependentUpon>dsLichSuBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cn\chuNha\dsLichSuDang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cn\chuNha\dsLichSuDang.Designer.cs">
+      <DependentUpon>dsLichSuDang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cn\chuNha\dsNhaSoHua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cn\chuNha\dsNhaSoHua.Designer.cs">
+      <DependentUpon>dsNhaSoHua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cn\chuNha\themChuNha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cn\chuNha\themChuNha.Designer.cs">
+      <DependentUpon>themChuNha.cs</DependentUpon>
+    </Compile>
     <Compile Include="cn\khachHang\ctietHopDong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +141,54 @@
     </Compile>
     <Compile Include="dangNhap.Designer.cs">
       <DependentUpon>dangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nv\chuNha\ctietChuNha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nv\chuNha\ctietChuNha.Designer.cs">
+      <DependentUpon>ctietChuNha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nv\chuNha\ctietHopDong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nv\chuNha\ctietHopDong.Designer.cs">
+      <DependentUpon>ctietHopDong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nv\chuNha\dsChuNha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nv\chuNha\dsChuNha.Designer.cs">
+      <DependentUpon>dsChuNha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nv\chuNha\dsHopDong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nv\chuNha\dsHopDong.Designer.cs">
+      <DependentUpon>dsHopDong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nv\chuNha\dsLichSuBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nv\chuNha\dsLichSuBan.Designer.cs">
+      <DependentUpon>dsLichSuBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nv\chuNha\dsLichSuDang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nv\chuNha\dsLichSuDang.Designer.cs">
+      <DependentUpon>dsLichSuDang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nv\chuNha\dsNhaSoHuu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nv\chuNha\dsNhaSoHuu.Designer.cs">
+      <DependentUpon>dsNhaSoHuu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nv\chuNha\themChuNha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nv\chuNha\themChuNha.Designer.cs">
+      <DependentUpon>themChuNha.cs</DependentUpon>
     </Compile>
     <Compile Include="nv\khachHang\dsKhachHang.cs">
       <SubType>Form</SubType>
@@ -144,6 +240,30 @@
     <Compile Include="nv\khachHang\themHopDong.Designer.cs">
       <DependentUpon>themHopDong.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="cn\chuNha\ctietChuNha.resx">
+      <DependentUpon>ctietChuNha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cn\chuNha\ctietHopDong.resx">
+      <DependentUpon>ctietHopDong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cn\chuNha\dsChuNha.resx">
+      <DependentUpon>dsChuNha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cn\chuNha\dsHopDongCN.resx">
+      <DependentUpon>dsHopDongCN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cn\chuNha\dsLichSuBan.resx">
+      <DependentUpon>dsLichSuBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cn\chuNha\dsLichSuDang.resx">
+      <DependentUpon>dsLichSuDang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cn\chuNha\dsNhaSoHua.resx">
+      <DependentUpon>dsNhaSoHua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cn\chuNha\themChuNha.resx">
+      <DependentUpon>themChuNha.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="cn\khachHang\ctietHopDong.resx">
       <DependentUpon>ctietHopDong.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,6 +287,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="dangNhap.resx">
       <DependentUpon>dangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nv\chuNha\ctietChuNha.resx">
+      <DependentUpon>ctietChuNha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nv\chuNha\ctietHopDong.resx">
+      <DependentUpon>ctietHopDong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nv\chuNha\dsChuNha.resx">
+      <DependentUpon>dsChuNha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nv\chuNha\dsHopDong.resx">
+      <DependentUpon>dsHopDong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nv\chuNha\dsLichSuBan.resx">
+      <DependentUpon>dsLichSuBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nv\chuNha\dsLichSuDang.resx">
+      <DependentUpon>dsLichSuDang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nv\chuNha\dsNhaSoHuu.resx">
+      <DependentUpon>dsNhaSoHuu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nv\chuNha\themChuNha.resx">
+      <DependentUpon>themChuNha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="nv\khachHang\dsBaiDangTuongThich.resx">
       <DependentUpon>dsBaiDangTuongThich.cs</DependentUpon>
@@ -216,10 +360,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="cn\baiDang\" />
-    <Folder Include="cn\chuNha\" />
     <Folder Include="cn\nhanVien\" />
     <Folder Include="nv\baiDang\" />
-    <Folder Include="nv\chuNha\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
