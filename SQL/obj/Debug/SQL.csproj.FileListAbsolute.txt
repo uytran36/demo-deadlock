@@ -49,3 +49,14 @@ D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.Properties.Resources.resources
 D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.themHopDong.resources
 D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.csproj.GenerateResource.cache
 D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.csproj.CoreCompileInputs.cache
+D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.cn.baiDang.chiTietBaiDang.resources
+D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.cn.baiDang.dsBaiDang.resources
+D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.cn.baiDang.dsNhanXet.resources
+D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.cn.baiDang.themBaiDang.resources
+D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.cn.nhanVien.chiTietNhanVien.resources
+D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.cn.nhanVien.dsNhanVien.resources
+D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.cn.nhanVien.themNhanVien.resources
+D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.nv.baiDang.chiTietBaiDang.resources
+D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.nv.baiDang.dsBaiDang.resources
+D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.nv.baiDang.dsNhanXet.resources
+D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.nv.baiDang.themBaiDang.resources
