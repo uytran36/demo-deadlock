@@ -101,6 +101,7 @@ namespace SQL.cn.baiDang
             this.btnOwner.TabIndex = 208;
             this.btnOwner.Text = "Chủ nhà";
             this.btnOwner.UseVisualStyleBackColor = true;
+            this.btnOwner.Click += new System.EventHandler(this.btnOwner_Click);
             // 
             // btnStaff
             // 
@@ -111,6 +112,7 @@ namespace SQL.cn.baiDang
             this.btnStaff.TabIndex = 206;
             this.btnStaff.Text = "Nhân viên";
             this.btnStaff.UseVisualStyleBackColor = true;
+            this.btnStaff.Click += new System.EventHandler(this.btnStaff_Click);
             // 
             // btnPost
             // 
@@ -131,6 +133,7 @@ namespace SQL.cn.baiDang
             this.btnCus.TabIndex = 205;
             this.btnCus.Text = "Khách hàng";
             this.btnCus.UseVisualStyleBackColor = true;
+            this.btnCus.Click += new System.EventHandler(this.btnCus_Click);
             // 
             // btnAdd
             // 
@@ -141,6 +144,7 @@ namespace SQL.cn.baiDang
             this.btnAdd.TabIndex = 209;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // dsBaiDang
             // 
@@ -159,6 +163,7 @@ namespace SQL.cn.baiDang
             this.Controls.Add(this.labelList);
             this.Name = "dsBaiDang";
             this.Text = "dsBaiDang";
+            this.Load += new System.EventHandler(this.dsBaiDang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBaiDang)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using SQL.cn.chuNha;
-using SQL.nv.khachHang;
-
+using SQL.cn.baiDang;
 namespace SQL
 {
     static class Program
@@ -18,7 +16,7 @@ namespace SQL
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new dsChuNha());
+            Application.Run(new dsBaiDang());
         }
     }
 }
