@@ -1,4 +1,7 @@
-﻿namespace SQL
+﻿using System;
+using System.Windows.Forms;
+
+namespace SQL.nv.khachHang
 {
     partial class dsKhachHang
     {
@@ -152,5 +155,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnUser;
         private System.Windows.Forms.Label labelHello;
+
     }
 }

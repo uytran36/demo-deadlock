@@ -38,6 +38,7 @@ namespace SQL.cn.chuNha
             this.labelList = new System.Windows.Forms.Label();
             this.btnUser = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,6 +61,7 @@ namespace SQL.cn.chuNha
             this.btnStaff.TabIndex = 58;
             this.btnStaff.Text = "Nhân viên";
             this.btnStaff.UseVisualStyleBackColor = true;
+            this.btnStaff.Click += new System.EventHandler(this.btnStaff_Click);
             // 
             // btnPost
             // 
@@ -70,6 +72,7 @@ namespace SQL.cn.chuNha
             this.btnPost.TabIndex = 59;
             this.btnPost.Text = "Bài đăng";
             this.btnPost.UseVisualStyleBackColor = true;
+            this.btnPost.Click += new System.EventHandler(this.btnPost_Click);
             // 
             // btnCus
             // 
@@ -80,6 +83,7 @@ namespace SQL.cn.chuNha
             this.btnCus.TabIndex = 57;
             this.btnCus.Text = "Khách hàng";
             this.btnCus.UseVisualStyleBackColor = true;
+            this.btnCus.Click += new System.EventHandler(this.btnCus_Click);
             // 
             // labelHello
             // 
@@ -98,9 +102,9 @@ namespace SQL.cn.chuNha
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(1031, 366);
+            this.dataGridView1.Size = new System.Drawing.Size(1031, 311);
             this.dataGridView1.TabIndex = 55;
-            // 
+            
             // labelList
             // 
             this.labelList.AutoSize = true;
@@ -131,22 +135,35 @@ namespace SQL.cn.chuNha
             this.btnLogout.Text = "Đăng xuất";
             this.btnLogout.UseVisualStyleBackColor = true;
             // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(479, 513);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(100, 28);
+            this.btnAdd.TabIndex = 61;
+            this.btnAdd.Text = "Thêm";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
             // dsChuNha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnOwner);
             this.Controls.Add(this.btnStaff);
             this.Controls.Add(this.btnPost);
             this.Controls.Add(this.btnCus);
             this.Controls.Add(this.labelHello);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.labelList);
             this.Controls.Add(this.btnUser);
             this.Controls.Add(this.btnLogout);
             this.Name = "dsChuNha";
             this.Text = "dsChuNha";
+            this.Load += new System.EventHandler(this.dsChuNha_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -164,5 +181,6 @@ namespace SQL.cn.chuNha
         private System.Windows.Forms.Label labelList;
         private System.Windows.Forms.Button btnUser;
         private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btnAdd;
     }
 }

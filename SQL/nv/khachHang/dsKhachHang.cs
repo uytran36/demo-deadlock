@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SQL
+namespace SQL.nv.khachHang
 {
     public partial class dsKhachHang : Form
     {

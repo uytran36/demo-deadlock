@@ -55,6 +55,7 @@ namespace SQL.cn.baiDang
             dataGridViewBaiDang.Columns.Remove("daXoa");
             dataGridViewBaiDang.ReadOnly = true;
 
+           
             cn.Close();
         }
 
