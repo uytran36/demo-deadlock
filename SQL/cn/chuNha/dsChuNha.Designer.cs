@@ -1,4 +1,6 @@
 ﻿
+using System.Windows.Forms;
+
 namespace SQL.cn.chuNha
 {
     partial class dsChuNha
@@ -34,7 +36,7 @@ namespace SQL.cn.chuNha
             this.btnPost = new System.Windows.Forms.Button();
             this.btnCus = new System.Windows.Forms.Button();
             this.labelHello = new System.Windows.Forms.Label();
-            this.dataView = new System.Windows.Forms.DataGridView();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.labelList = new System.Windows.Forms.Label();
             this.btnUser = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();

@@ -163,3 +163,5 @@ D:\SQL\sqltrans\SQL\obj\Debug\SQL.themHopDong.resources
 D:\SQL\sqltrans\SQL\obj\Debug\SQL.csproj.GenerateResource.cache
 D:\SQL\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.ctietLSXem.resources
 >>>>>>> 62438ee247fd00235f6b675dfb6311f177c7a7a4
+D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.cn.chuNha.dsNhaSoHuu.resources
+D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.ctietLSXem.resources
