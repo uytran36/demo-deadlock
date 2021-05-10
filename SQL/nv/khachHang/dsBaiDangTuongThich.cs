@@ -12,7 +12,7 @@ namespace SQL.nv.khachHang
 {
     public partial class dsBaiDangTuongThich : Form
     {
-        public dsBaiDangTuongThich()
+        public dsBaiDangTuongThich(String tieuChi)
         {
             InitializeComponent();
         }

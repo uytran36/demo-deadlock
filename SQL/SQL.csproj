@@ -94,11 +94,11 @@
     <Compile Include="cn\chuNha\dsLichSuDang.Designer.cs">
       <DependentUpon>dsLichSuDang.cs</DependentUpon>
     </Compile>
-    <Compile Include="cn\chuNha\dsNhaSoHua.cs">
+    <Compile Include="cn\chuNha\dsNhaSoHuu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="cn\chuNha\dsNhaSoHua.Designer.cs">
-      <DependentUpon>dsNhaSoHua.cs</DependentUpon>
+    <Compile Include="cn\chuNha\dsNhaSoHuu.Designer.cs">
+      <DependentUpon>dsNhaSoHuu.cs</DependentUpon>
     </Compile>
     <Compile Include="cn\chuNha\themChuNha.cs">
       <SubType>Form</SubType>
@@ -274,6 +274,12 @@
     <Compile Include="nv\khachHang\dsBaiDangTuongThich.Designer.cs">
       <DependentUpon>dsBaiDangTuongThich.cs</DependentUpon>
     </Compile>
+    <Compile Include="nv\khachHang\ctietLSXem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nv\khachHang\ctietLSXem.Designer.cs">
+      <DependentUpon>ctietLSXem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="nv\khachHang\themHopDong.cs">
@@ -306,8 +312,8 @@
     <EmbeddedResource Include="cn\chuNha\dsLichSuDang.resx">
       <DependentUpon>dsLichSuDang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="cn\chuNha\dsNhaSoHua.resx">
-      <DependentUpon>dsNhaSoHua.cs</DependentUpon>
+    <EmbeddedResource Include="cn\chuNha\dsNhaSoHuu.resx">
+      <DependentUpon>dsNhaSoHuu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="cn\chuNha\themChuNha.resx">
       <DependentUpon>themChuNha.cs</DependentUpon>
@@ -374,6 +380,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="nv\chuNha\themChuNha.resx">
       <DependentUpon>themChuNha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nv\khachHang\ctietLSXem.resx">
+      <DependentUpon>ctietLSXem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="nv\khachHang\dsBaiDangTuongThich.resx">
       <DependentUpon>dsBaiDangTuongThich.cs</DependentUpon>

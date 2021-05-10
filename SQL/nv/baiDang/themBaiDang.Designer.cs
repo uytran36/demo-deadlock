@@ -32,8 +32,10 @@ namespace SQL.nv.baiDang
             this.labelDetail = new System.Windows.Forms.Label();
             this.labelHello = new System.Windows.Forms.Label();
             this.btnOwner = new System.Windows.Forms.Button();
+            this.btnStaff = new System.Windows.Forms.Button();
             this.btnPost = new System.Windows.Forms.Button();
             this.btnCus = new System.Windows.Forms.Button();
+            this.labelHello = new System.Windows.Forms.Label();
             this.btnUser = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -93,51 +95,71 @@ namespace SQL.nv.baiDang
             // 
             // btnOwner
             // 
-            this.btnOwner.Location = new System.Drawing.Point(743, 64);
+            this.btnOwner.Location = new System.Drawing.Point(556, 44);
             this.btnOwner.Margin = new System.Windows.Forms.Padding(4);
             this.btnOwner.Name = "btnOwner";
-            this.btnOwner.Size = new System.Drawing.Size(315, 64);
-            this.btnOwner.TabIndex = 111;
+            this.btnOwner.Size = new System.Drawing.Size(251, 64);
+            this.btnOwner.TabIndex = 219;
             this.btnOwner.Text = "Chủ nhà";
             this.btnOwner.UseVisualStyleBackColor = true;
             // 
+            // btnStaff
+            // 
+            this.btnStaff.Location = new System.Drawing.Point(815, 44);
+            this.btnStaff.Margin = new System.Windows.Forms.Padding(4);
+            this.btnStaff.Name = "btnStaff";
+            this.btnStaff.Size = new System.Drawing.Size(269, 64);
+            this.btnStaff.TabIndex = 217;
+            this.btnStaff.Text = "Nhân viên";
+            this.btnStaff.UseVisualStyleBackColor = true;
+            // 
             // btnPost
             // 
-            this.btnPost.Location = new System.Drawing.Point(378, 64);
+            this.btnPost.Location = new System.Drawing.Point(309, 44);
             this.btnPost.Margin = new System.Windows.Forms.Padding(4);
             this.btnPost.Name = "btnPost";
-            this.btnPost.Size = new System.Drawing.Size(357, 64);
-            this.btnPost.TabIndex = 110;
+            this.btnPost.Size = new System.Drawing.Size(239, 64);
+            this.btnPost.TabIndex = 218;
             this.btnPost.Text = "Bài đăng";
             this.btnPost.UseVisualStyleBackColor = true;
             // 
             // btnCus
             // 
-            this.btnCus.Location = new System.Drawing.Point(23, 64);
+            this.btnCus.Location = new System.Drawing.Point(49, 44);
             this.btnCus.Margin = new System.Windows.Forms.Padding(4);
             this.btnCus.Name = "btnCus";
-            this.btnCus.Size = new System.Drawing.Size(347, 64);
-            this.btnCus.TabIndex = 109;
+            this.btnCus.Size = new System.Drawing.Size(252, 64);
+            this.btnCus.TabIndex = 216;
             this.btnCus.Text = "Khách hàng";
             this.btnCus.UseVisualStyleBackColor = true;
             // 
+            // labelHello
+            // 
+            this.labelHello.AutoSize = true;
+            this.labelHello.Location = new System.Drawing.Point(47, 15);
+            this.labelHello.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelHello.Name = "labelHello";
+            this.labelHello.Size = new System.Drawing.Size(158, 17);
+            this.labelHello.TabIndex = 215;
+            this.labelHello.Text = "Xin chào, CHINHANH01";
+            // 
             // btnUser
             // 
-            this.btnUser.Location = new System.Drawing.Point(850, 21);
+            this.btnUser.Location = new System.Drawing.Point(874, 9);
             this.btnUser.Margin = new System.Windows.Forms.Padding(4);
             this.btnUser.Name = "btnUser";
             this.btnUser.Size = new System.Drawing.Size(100, 28);
-            this.btnUser.TabIndex = 107;
+            this.btnUser.TabIndex = 213;
             this.btnUser.Text = "Cá nhân";
             this.btnUser.UseVisualStyleBackColor = true;
             // 
             // btnLogout
             // 
-            this.btnLogout.Location = new System.Drawing.Point(958, 21);
+            this.btnLogout.Location = new System.Drawing.Point(982, 9);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(100, 28);
-            this.btnLogout.TabIndex = 108;
+            this.btnLogout.TabIndex = 214;
             this.btnLogout.Text = "Đăng xuất";
             this.btnLogout.UseVisualStyleBackColor = true;
             // 
@@ -487,7 +509,7 @@ namespace SQL.nv.baiDang
             this.Controls.Add(this.btnUser);
             this.Controls.Add(this.btnLogout);
             this.Name = "themBaiDang";
-            this.Text = "Form1";
+            this.Text = "themBaiDang";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -497,8 +519,10 @@ namespace SQL.nv.baiDang
         private System.Windows.Forms.Label labelDetail;
         private System.Windows.Forms.Label labelHello;
         private System.Windows.Forms.Button btnOwner;
+        private System.Windows.Forms.Button btnStaff;
         private System.Windows.Forms.Button btnPost;
         private System.Windows.Forms.Button btnCus;
+        private System.Windows.Forms.Label labelHello;
         private System.Windows.Forms.Button btnUser;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.TextBox textBox1;

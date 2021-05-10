@@ -1,7 +1,7 @@
 ﻿
 namespace SQL.cn.chuNha
 {
-    partial class dsNhaSoHua
+    partial class dsNhaSoHuu
     {
         /// <summary>
         /// Required designer variable.
