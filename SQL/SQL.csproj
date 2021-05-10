@@ -46,6 +46,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cn\baiDang\chiTietBaiDang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cn\baiDang\chiTietBaiDang.Designer.cs">
+      <DependentUpon>chiTietBaiDang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cn\baiDang\dsBaiDang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cn\baiDang\dsBaiDang.Designer.cs">
+      <DependentUpon>dsBaiDang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cn\baiDang\dsNhanXet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cn\baiDang\dsNhanXet.Designer.cs">
+      <DependentUpon>dsNhanXet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cn\baiDang\themBaiDang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cn\baiDang\themBaiDang.Designer.cs">
+      <DependentUpon>themBaiDang.cs</DependentUpon>
+    </Compile>
     <Compile Include="cn\chuNha\ctietChuNha.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,11 +106,11 @@
     <Compile Include="cn\chuNha\dsLichSuDang.Designer.cs">
       <DependentUpon>dsLichSuDang.cs</DependentUpon>
     </Compile>
-    <Compile Include="cn\chuNha\dsNhaSoHua.cs">
+    <Compile Include="cn\chuNha\dsNhaSoHuu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="cn\chuNha\dsNhaSoHua.Designer.cs">
-      <DependentUpon>dsNhaSoHua.cs</DependentUpon>
+    <Compile Include="cn\chuNha\dsNhaSoHuu.Designer.cs">
+      <DependentUpon>dsNhaSoHuu.cs</DependentUpon>
     </Compile>
     <Compile Include="cn\chuNha\themChuNha.cs">
       <SubType>Form</SubType>
@@ -141,6 +165,30 @@
     </Compile>
     <Compile Include="dangNhap.Designer.cs">
       <DependentUpon>dangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nv\baiDang\chiTietBaiDang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nv\baiDang\chiTietBaiDang.Designer.cs">
+      <DependentUpon>chiTietBaiDang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nv\baiDang\dsBaiDang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nv\baiDang\dsBaiDang.Designer.cs">
+      <DependentUpon>dsBaiDang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nv\baiDang\dsNhanXet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nv\baiDang\dsNhanXet.Designer.cs">
+      <DependentUpon>dsNhanXet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nv\baiDang\themBaiDang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nv\baiDang\themBaiDang.Designer.cs">
+      <DependentUpon>themBaiDang.cs</DependentUpon>
     </Compile>
     <Compile Include="nv\chuNha\ctietChuNha.cs">
       <SubType>Form</SubType>
@@ -240,6 +288,18 @@
     <Compile Include="nv\khachHang\themHopDong.Designer.cs">
       <DependentUpon>themHopDong.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="cn\baiDang\chiTietBaiDang.resx">
+      <DependentUpon>chiTietBaiDang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cn\baiDang\dsBaiDang.resx">
+      <DependentUpon>dsBaiDang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cn\baiDang\dsNhanXet.resx">
+      <DependentUpon>dsNhanXet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cn\baiDang\themBaiDang.resx">
+      <DependentUpon>themBaiDang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="cn\chuNha\ctietChuNha.resx">
       <DependentUpon>ctietChuNha.cs</DependentUpon>
     </EmbeddedResource>
@@ -258,8 +318,8 @@
     <EmbeddedResource Include="cn\chuNha\dsLichSuDang.resx">
       <DependentUpon>dsLichSuDang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="cn\chuNha\dsNhaSoHua.resx">
-      <DependentUpon>dsNhaSoHua.cs</DependentUpon>
+    <EmbeddedResource Include="cn\chuNha\dsNhaSoHuu.resx">
+      <DependentUpon>dsNhaSoHuu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="cn\chuNha\themChuNha.resx">
       <DependentUpon>themChuNha.cs</DependentUpon>
@@ -287,6 +347,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="dangNhap.resx">
       <DependentUpon>dangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nv\baiDang\chiTietBaiDang.resx">
+      <DependentUpon>chiTietBaiDang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nv\baiDang\dsBaiDang.resx">
+      <DependentUpon>dsBaiDang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nv\baiDang\dsNhanXet.resx">
+      <DependentUpon>dsNhanXet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nv\baiDang\themBaiDang.resx">
+      <DependentUpon>themBaiDang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="nv\chuNha\ctietChuNha.resx">
       <DependentUpon>ctietChuNha.cs</DependentUpon>
@@ -359,9 +431,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="cn\baiDang\" />
     <Folder Include="cn\nhanVien\" />
-    <Folder Include="nv\baiDang\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

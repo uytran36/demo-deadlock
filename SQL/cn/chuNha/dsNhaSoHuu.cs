@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SQL.cn.chuNha
 {
-    public partial class dsNhaSoHua : Form
+    public partial class dsNhaSoHuu : Form
     {
-        public dsNhaSoHua()
+        public dsNhaSoHuu()
         {
             InitializeComponent();
         }
