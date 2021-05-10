@@ -298,6 +298,12 @@
     <Compile Include="nv\khachHang\dsBaiDangTuongThich.Designer.cs">
       <DependentUpon>dsBaiDangTuongThich.cs</DependentUpon>
     </Compile>
+    <Compile Include="nv\khachHang\ctietLSXem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nv\khachHang\ctietLSXem.Designer.cs">
+      <DependentUpon>ctietLSXem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="nv\khachHang\themHopDong.cs">
@@ -411,6 +417,9 @@
     <EmbeddedResource Include="nv\chuNha\themChuNha.resx">
       <DependentUpon>themChuNha.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="nv\khachHang\ctietLSXem.resx">
+      <DependentUpon>ctietLSXem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="nv\khachHang\dsBaiDangTuongThich.resx">
       <DependentUpon>dsBaiDangTuongThich.cs</DependentUpon>
     </EmbeddedResource>
@@ -457,10 +466,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="cn\baiDang\" />
-    <Folder Include="cn\nhanVien\" />
-    <Folder Include="nv\baiDang\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

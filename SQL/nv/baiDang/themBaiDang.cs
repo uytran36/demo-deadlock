@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SQL.cn.baiDang
+namespace SQL.nv.baiDang
 {
     public partial class themBaiDang : Form
     {

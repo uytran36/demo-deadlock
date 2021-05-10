@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SQL.cn.chuNha;
+using SQL.nv.khachHang;
 
 namespace SQL
 {

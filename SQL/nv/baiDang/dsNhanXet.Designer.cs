@@ -1,5 +1,5 @@
 ﻿
-namespace SQL.cn.baiDang
+namespace SQL.nv.baiDang
 {
     partial class dsNhanXet
     {
