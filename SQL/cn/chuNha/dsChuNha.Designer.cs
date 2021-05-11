@@ -41,15 +41,15 @@ namespace SQL.cn.chuNha
             this.btnUser = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.btnTaiLai = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnOwner
             // 
-            this.btnOwner.Location = new System.Drawing.Point(521, 57);
-            this.btnOwner.Margin = new System.Windows.Forms.Padding(4);
+            this.btnOwner.Location = new System.Drawing.Point(391, 46);
             this.btnOwner.Name = "btnOwner";
-            this.btnOwner.Size = new System.Drawing.Size(251, 64);
+            this.btnOwner.Size = new System.Drawing.Size(188, 52);
             this.btnOwner.TabIndex = 60;
             this.btnOwner.Text = "Chủ nhà";
             this.btnOwner.UseVisualStyleBackColor = true;
@@ -57,10 +57,9 @@ namespace SQL.cn.chuNha
             // 
             // btnStaff
             // 
-            this.btnStaff.Location = new System.Drawing.Point(780, 57);
-            this.btnStaff.Margin = new System.Windows.Forms.Padding(4);
+            this.btnStaff.Location = new System.Drawing.Point(585, 46);
             this.btnStaff.Name = "btnStaff";
-            this.btnStaff.Size = new System.Drawing.Size(269, 64);
+            this.btnStaff.Size = new System.Drawing.Size(202, 52);
             this.btnStaff.TabIndex = 58;
             this.btnStaff.Text = "Nhân viên";
             this.btnStaff.UseVisualStyleBackColor = true;
@@ -68,10 +67,9 @@ namespace SQL.cn.chuNha
             // 
             // btnPost
             // 
-            this.btnPost.Location = new System.Drawing.Point(275, 57);
-            this.btnPost.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPost.Location = new System.Drawing.Point(206, 46);
             this.btnPost.Name = "btnPost";
-            this.btnPost.Size = new System.Drawing.Size(239, 64);
+            this.btnPost.Size = new System.Drawing.Size(179, 52);
             this.btnPost.TabIndex = 59;
             this.btnPost.Text = "Bài đăng";
             this.btnPost.UseVisualStyleBackColor = true;
@@ -79,10 +77,9 @@ namespace SQL.cn.chuNha
             // 
             // btnCus
             // 
-            this.btnCus.Location = new System.Drawing.Point(15, 57);
-            this.btnCus.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCus.Location = new System.Drawing.Point(11, 46);
             this.btnCus.Name = "btnCus";
-            this.btnCus.Size = new System.Drawing.Size(252, 64);
+            this.btnCus.Size = new System.Drawing.Size(189, 52);
             this.btnCus.TabIndex = 57;
             this.btnCus.Text = "Khách hàng";
             this.btnCus.UseVisualStyleBackColor = true;
@@ -91,71 +88,76 @@ namespace SQL.cn.chuNha
             // labelHello
             // 
             this.labelHello.AutoSize = true;
-            this.labelHello.Location = new System.Drawing.Point(16, 13);
-            this.labelHello.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelHello.Location = new System.Drawing.Point(12, 11);
             this.labelHello.Name = "labelHello";
-            this.labelHello.Size = new System.Drawing.Size(158, 17);
+            this.labelHello.Size = new System.Drawing.Size(124, 13);
             this.labelHello.TabIndex = 56;
             this.labelHello.Text = "Xin chào, CHINHANH01";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(20, 175);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Location = new System.Drawing.Point(15, 142);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(1031, 311);
+            this.dataGridView1.Size = new System.Drawing.Size(773, 253);
             this.dataGridView1.TabIndex = 55;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // labelList
             // 
             this.labelList.AutoSize = true;
-            this.labelList.Location = new System.Drawing.Point(16, 141);
-            this.labelList.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelList.Location = new System.Drawing.Point(12, 115);
             this.labelList.Name = "labelList";
-            this.labelList.Size = new System.Drawing.Size(131, 17);
+            this.labelList.Size = new System.Drawing.Size(101, 13);
             this.labelList.TabIndex = 54;
             this.labelList.Text = "Danh sách chủ nhà";
             // 
             // btnUser
             // 
-            this.btnUser.Location = new System.Drawing.Point(843, 16);
-            this.btnUser.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUser.Location = new System.Drawing.Point(632, 13);
             this.btnUser.Name = "btnUser";
-            this.btnUser.Size = new System.Drawing.Size(100, 28);
+            this.btnUser.Size = new System.Drawing.Size(75, 23);
             this.btnUser.TabIndex = 52;
             this.btnUser.Text = "Cá nhân";
             this.btnUser.UseVisualStyleBackColor = true;
             // 
             // btnLogout
             // 
-            this.btnLogout.Location = new System.Drawing.Point(951, 16);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLogout.Location = new System.Drawing.Point(713, 13);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(100, 28);
+            this.btnLogout.Size = new System.Drawing.Size(75, 23);
             this.btnLogout.TabIndex = 53;
             this.btnLogout.Text = "Đăng xuất";
             this.btnLogout.UseVisualStyleBackColor = true;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(464, 513);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdd.Location = new System.Drawing.Point(348, 417);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(100, 28);
+            this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 61;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // btnTaiLai
+            // 
+            this.btnTaiLai.Location = new System.Drawing.Point(687, 415);
+            this.btnTaiLai.Name = "btnTaiLai";
+            this.btnTaiLai.Size = new System.Drawing.Size(75, 23);
+            this.btnTaiLai.TabIndex = 61;
+            this.btnTaiLai.Text = "Tải lại";
+            this.btnTaiLai.UseVisualStyleBackColor = true;
+            this.btnTaiLai.Click += new System.EventHandler(this.btnTaiLai_Click);
+            // 
             // dsChuNha
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btnTaiLai);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnOwner);
             this.Controls.Add(this.btnStaff);
@@ -165,6 +167,7 @@ namespace SQL.cn.chuNha
             this.Controls.Add(this.labelList);
             this.Controls.Add(this.btnUser);
             this.Controls.Add(this.btnLogout);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "dsChuNha";
             this.Text = "dsChuNha";
             this.Load += new System.EventHandler(this.dsChuNha_Load);
@@ -186,5 +189,6 @@ namespace SQL.cn.chuNha
         private System.Windows.Forms.Button btnUser;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnAdd;
+        private Button btnTaiLai;
     }
 }

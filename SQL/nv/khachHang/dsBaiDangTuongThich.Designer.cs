@@ -125,6 +125,7 @@
             this.Controls.Add(this.btnLogout);
             this.Name = "dsBaiDangTuongThich";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.dsBaiDangTuongThich_load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

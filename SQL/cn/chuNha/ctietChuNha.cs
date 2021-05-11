@@ -17,6 +17,8 @@ namespace SQL.cn.chuNha
     public partial class ctietChuNha : Form
     {
         String maChuNha;
+        String sdt;
+        String ten;
         public ctietChuNha(String maChuNha, String hoTen, String sdt, String diaChi, String maCN, String maNV)
         {
             InitializeComponent();
@@ -26,6 +28,8 @@ namespace SQL.cn.chuNha
             tbMaChiNhanh.Text = maCN;
             tbMaNhanVien.Text = maNV;
             this.maChuNha = maChuNha;
+            this.ten = hoTen;
+            this.sdt = sdt;
         }
 
         private void btnCus_Click(object sender, EventArgs e)
@@ -104,33 +108,51 @@ namespace SQL.cn.chuNha
             string cnstr = @"Data Source =.; Initial Catalog = qlnd; Integrated Security = True";
             SqlConnection cn = new SqlConnection(cnstr);
 
-            SqlCommand cmd = new SqlCommand("sp_unrepeatableRead_sdt2", cn);
+            if(this.sdt != tbSDT.Text)
+            {
+                SqlCommand cmd = new SqlCommand("sp_unrepeatableRead_sdt2", cn);
 
-            cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandType = CommandType.StoredProcedure;
 
-            cmd.Parameters.Clear();
-            cmd.Parameters.Add("@maChuNha", SqlDbType.NChar).Value = this.maChuNha;
-            cmd.Parameters.Add("@sdt", SqlDbType.NChar).Value = tbSDT.Text;
-            cn.Open();
+                cmd.Parameters.Clear();
+                cmd.Parameters.Add("@maChuNha", SqlDbType.NChar).Value = this.maChuNha;
+                cmd.Parameters.Add("@sdt", SqlDbType.NChar).Value = tbSDT.Text;
+                cn.Open();
 
-            int i = cmd.ExecuteNonQuery();
+                int i = cmd.ExecuteNonQuery();
+
+                cn.Close();
+
+                cmd = new SqlCommand("sp_lostUpdate_sdt", cn);
+
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.Clear();
+                cmd.Parameters.Add("@maChuNha", SqlDbType.NChar).Value = this.maChuNha;
+                cmd.Parameters.Add("@sdt", SqlDbType.NChar).Value = tbSDT.Text;
+                cn.Open();
+
+                i = cmd.ExecuteNonQuery();
+
+                cn.Close();
+
+            }
+
+            if(this.ten != tbTen.Text)
+            {
+                SqlCommand cmd = new SqlCommand("sp_dirtyRead_chuNha", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.Clear();
+                cmd.Parameters.Add("@maChuNha", SqlDbType.NChar).Value = this.maChuNha;
+                cmd.Parameters.Add("@tenChuNha", SqlDbType.NVarChar).Value = tbTen.Text;
+                cn.Open();
+
+                int i = cmd.ExecuteNonQuery();
+            }
+            
 
             cn.Close();
-
-            cmd = new SqlCommand("sp_lostUpdate_sdt", cn);
-
-            cmd.CommandType = CommandType.StoredProcedure;
-
-            cmd.Parameters.Clear();
-            cmd.Parameters.Add("@maChuNha", SqlDbType.NChar).Value = this.maChuNha;
-            cmd.Parameters.Add("@sdt", SqlDbType.NChar).Value = tbSDT.Text;
-            cn.Open();
-
-            i = cmd.ExecuteNonQuery();
-
-            cn.Close();
-            MessageBox.Show("Lưu thành công");
-
         }
 
         private void btnXoa_Click(object sender, EventArgs e)

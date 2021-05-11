@@ -28,22 +28,23 @@ namespace SQL.nv.khachHang
             string cnstr = @"Data Source =.; Initial Catalog = qlnd; Integrated Security = True";
             SqlConnection cn = new SqlConnection(cnstr);
 
-            SqlCommand cmd = new SqlCommand("sp_dirtyRead_lichSuXem", cn);
+            SqlCommand cmd = new SqlCommand("Update Xem set NgayXem = '" + tbNgayXem.Text + "', MaKhachHang = '" + 
+                tbMaKH.Text + "', MaNha = '" + tbMaNha.Text + "' where MaXem = '" + this.maXem + "'", cn);
 
-            cmd.CommandType = CommandType.StoredProcedure;
-            
-            cmd.Parameters.Clear();
-            cmd.Parameters.Add("@maXem", SqlDbType.NChar).Value = this.maXem;
-            cmd.Parameters.Add("@maKH", SqlDbType.NChar).Value = tbMaKH.Text;
-            cmd.Parameters.Add("@maNha", SqlDbType.NChar).Value = tbMaNha.Text;
-            cmd.Parameters.Add("@ngayXem", SqlDbType.DateTime).Value = DateTime.Parse(tbNgayXem.Text);
+            cmd.CommandType = CommandType.Text;
             cn.Open();
 
             cmd.ExecuteNonQuery();
 
             cn.Close();
 
-            
+            this.Close();
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Đã xóa");
+            this.Close();
         }
     }
 }

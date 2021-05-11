@@ -1,6 +1,6 @@
 ﻿namespace SQL.nv.khachHang
 {
-    partial class ctietLSXem
+    partial class ctietLSThue
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tbNgayXem = new System.Windows.Forms.TextBox();
+            this.tbNgayThue = new System.Windows.Forms.TextBox();
             this.tbMaNha = new System.Windows.Forms.TextBox();
             this.tbMaKH = new System.Windows.Forms.TextBox();
             this.labelMaNha = new System.Windows.Forms.Label();
@@ -45,143 +45,143 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // tbNgayXem
+            // tbNgayThue
             // 
-            this.tbNgayXem.Location = new System.Drawing.Point(347, 238);
-            this.tbNgayXem.Name = "tbNgayXem";
-            this.tbNgayXem.Size = new System.Drawing.Size(210, 20);
-            this.tbNgayXem.TabIndex = 91;
+            this.tbNgayThue.Location = new System.Drawing.Point(347, 268);
+            this.tbNgayThue.Name = "tbNgayThue";
+            this.tbNgayThue.Size = new System.Drawing.Size(210, 20);
+            this.tbNgayThue.TabIndex = 106;
             // 
             // tbMaNha
             // 
-            this.tbMaNha.Location = new System.Drawing.Point(347, 211);
+            this.tbMaNha.Location = new System.Drawing.Point(347, 241);
             this.tbMaNha.Name = "tbMaNha";
             this.tbMaNha.Size = new System.Drawing.Size(210, 20);
-            this.tbMaNha.TabIndex = 90;
+            this.tbMaNha.TabIndex = 105;
             // 
             // tbMaKH
             // 
-            this.tbMaKH.Location = new System.Drawing.Point(347, 185);
+            this.tbMaKH.Location = new System.Drawing.Point(347, 215);
             this.tbMaKH.Name = "tbMaKH";
             this.tbMaKH.Size = new System.Drawing.Size(210, 20);
-            this.tbMaKH.TabIndex = 89;
+            this.tbMaKH.TabIndex = 104;
             // 
             // labelMaNha
             // 
             this.labelMaNha.AutoSize = true;
-            this.labelMaNha.Location = new System.Drawing.Point(185, 238);
+            this.labelMaNha.Location = new System.Drawing.Point(185, 268);
             this.labelMaNha.Name = "labelMaNha";
-            this.labelMaNha.Size = new System.Drawing.Size(54, 13);
-            this.labelMaNha.TabIndex = 85;
-            this.labelMaNha.Text = "Ngày xem";
+            this.labelMaNha.Size = new System.Drawing.Size(56, 13);
+            this.labelMaNha.TabIndex = 103;
+            this.labelMaNha.Text = "Ngày thuê";
             // 
             // lbNgayXem
             // 
             this.lbNgayXem.AutoSize = true;
-            this.lbNgayXem.Location = new System.Drawing.Point(185, 210);
+            this.lbNgayXem.Location = new System.Drawing.Point(185, 240);
             this.lbNgayXem.Name = "lbNgayXem";
             this.lbNgayXem.Size = new System.Drawing.Size(43, 13);
-            this.lbNgayXem.TabIndex = 84;
+            this.lbNgayXem.TabIndex = 102;
             this.lbNgayXem.Text = "Mã nhà";
             // 
             // labelA
             // 
             this.labelA.AutoSize = true;
-            this.labelA.Location = new System.Drawing.Point(185, 185);
+            this.labelA.Location = new System.Drawing.Point(185, 215);
             this.labelA.Name = "labelA";
             this.labelA.Size = new System.Drawing.Size(82, 13);
-            this.labelA.TabIndex = 83;
+            this.labelA.TabIndex = 101;
             this.labelA.Text = "Mã khách hàng";
             // 
             // labelDetail
             // 
             this.labelDetail.AutoSize = true;
-            this.labelDetail.Location = new System.Drawing.Point(12, 117);
+            this.labelDetail.Location = new System.Drawing.Point(12, 147);
             this.labelDetail.Name = "labelDetail";
-            this.labelDetail.Size = new System.Drawing.Size(94, 13);
-            this.labelDetail.TabIndex = 82;
-            this.labelDetail.Text = "Chi tiết lịch sử xem";
+            this.labelDetail.Size = new System.Drawing.Size(96, 13);
+            this.labelDetail.TabIndex = 100;
+            this.labelDetail.Text = "Chi tiết lịch sử thuê";
             // 
             // labelHello
             // 
             this.labelHello.AutoSize = true;
-            this.labelHello.Location = new System.Drawing.Point(12, 24);
+            this.labelHello.Location = new System.Drawing.Point(12, 54);
             this.labelHello.Name = "labelHello";
             this.labelHello.Size = new System.Drawing.Size(82, 13);
-            this.labelHello.TabIndex = 81;
+            this.labelHello.TabIndex = 99;
             this.labelHello.Text = "Xin chào, NV01";
             // 
             // btnOwner
             // 
-            this.btnOwner.Location = new System.Drawing.Point(552, 62);
+            this.btnOwner.Location = new System.Drawing.Point(552, 92);
             this.btnOwner.Name = "btnOwner";
             this.btnOwner.Size = new System.Drawing.Size(236, 52);
-            this.btnOwner.TabIndex = 80;
+            this.btnOwner.TabIndex = 98;
             this.btnOwner.Text = "Chủ nhà";
             this.btnOwner.UseVisualStyleBackColor = true;
             // 
             // btnPost
             // 
-            this.btnPost.Location = new System.Drawing.Point(278, 62);
+            this.btnPost.Location = new System.Drawing.Point(278, 92);
             this.btnPost.Name = "btnPost";
             this.btnPost.Size = new System.Drawing.Size(268, 52);
-            this.btnPost.TabIndex = 79;
+            this.btnPost.TabIndex = 97;
             this.btnPost.Text = "Bài đăng";
             this.btnPost.UseVisualStyleBackColor = true;
             // 
             // btnCus
             // 
-            this.btnCus.Location = new System.Drawing.Point(12, 62);
+            this.btnCus.Location = new System.Drawing.Point(12, 92);
             this.btnCus.Name = "btnCus";
             this.btnCus.Size = new System.Drawing.Size(260, 52);
-            this.btnCus.TabIndex = 78;
+            this.btnCus.TabIndex = 96;
             this.btnCus.Text = "Khách hàng";
             this.btnCus.UseVisualStyleBackColor = true;
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(244, 343);
+            this.btnLuu.Location = new System.Drawing.Point(244, 373);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(75, 23);
-            this.btnLuu.TabIndex = 75;
+            this.btnLuu.TabIndex = 93;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnUser
             // 
-            this.btnUser.Location = new System.Drawing.Point(632, 27);
+            this.btnUser.Location = new System.Drawing.Point(632, 57);
             this.btnUser.Name = "btnUser";
             this.btnUser.Size = new System.Drawing.Size(75, 23);
-            this.btnUser.TabIndex = 74;
+            this.btnUser.TabIndex = 92;
             this.btnUser.Text = "Cá nhân";
             this.btnUser.UseVisualStyleBackColor = true;
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(406, 343);
+            this.btnXoa.Location = new System.Drawing.Point(406, 373);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 23);
-            this.btnXoa.TabIndex = 77;
+            this.btnXoa.TabIndex = 95;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnLogout
             // 
-            this.btnLogout.Location = new System.Drawing.Point(713, 27);
+            this.btnLogout.Location = new System.Drawing.Point(713, 57);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(75, 23);
-            this.btnLogout.TabIndex = 76;
+            this.btnLogout.TabIndex = 94;
             this.btnLogout.Text = "Đăng xuất";
             this.btnLogout.UseVisualStyleBackColor = true;
             // 
-            // ctietLSXem
+            // ctietLSThue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.tbNgayXem);
+            this.Controls.Add(this.tbNgayThue);
             this.Controls.Add(this.tbMaNha);
             this.Controls.Add(this.tbMaKH);
             this.Controls.Add(this.labelMaNha);
@@ -196,15 +196,16 @@
             this.Controls.Add(this.btnUser);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnLogout);
-            this.Name = "ctietLSXem";
-            this.Text = "Form1";
+            this.Name = "ctietLSThue";
+            this.Text = "ctietLSThue";
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox tbNgayXem;
+
+        private System.Windows.Forms.TextBox tbNgayThue;
         private System.Windows.Forms.TextBox tbMaNha;
         private System.Windows.Forms.TextBox tbMaKH;
         private System.Windows.Forms.Label labelMaNha;

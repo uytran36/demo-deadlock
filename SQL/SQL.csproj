@@ -244,6 +244,12 @@
     <Compile Include="nv\chuNha\themChuNha.Designer.cs">
       <DependentUpon>themChuNha.cs</DependentUpon>
     </Compile>
+    <Compile Include="nv\khachHang\ctietLSThue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nv\khachHang\ctietLSThue.Designer.cs">
+      <DependentUpon>ctietLSThue.cs</DependentUpon>
+    </Compile>
     <Compile Include="nv\khachHang\dsKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -291,6 +297,12 @@
     </Compile>
     <Compile Include="nv\khachHang\ctietLSXem.Designer.cs">
       <DependentUpon>ctietLSXem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nv\khachHang\themLSThue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nv\khachHang\themLSThue.Designer.cs">
+      <DependentUpon>themLSThue.cs</DependentUpon>
     </Compile>
     <Compile Include="nv\khachHang\themLSXem.cs">
       <SubType>Form</SubType>
@@ -405,6 +417,9 @@
     <EmbeddedResource Include="nv\chuNha\themChuNha.resx">
       <DependentUpon>themChuNha.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="nv\khachHang\ctietLSThue.resx">
+      <DependentUpon>ctietLSThue.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="nv\khachHang\ctietLSXem.resx">
       <DependentUpon>ctietLSXem.cs</DependentUpon>
     </EmbeddedResource>
@@ -428,6 +443,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="nv\khachHang\dsLichSuXem.resx">
       <DependentUpon>dsLichSuXem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nv\khachHang\themLSThue.resx">
+      <DependentUpon>themLSThue.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="nv\khachHang\themLSXem.resx">
       <DependentUpon>themLSXem.cs</DependentUpon>

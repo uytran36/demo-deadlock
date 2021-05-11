@@ -126,5 +126,25 @@ namespace SQL.cn.chuNha
             dataGridView1.DataSource = dt;
             cn.Close();
         }
+
+        private void btnTaiLai_Click(object sender,EventArgs e)
+        {
+            string cnstr = @"Data Source =.; Initial Catalog = qlnd; Integrated Security = True";
+            SqlConnection cn = new SqlConnection(cnstr);
+
+            SqlCommand cmd = new SqlCommand("sp_dirtyRead_chuNha2", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cn.Open();
+            int i = cmd.ExecuteNonQuery();
+
+            cn.Close();
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+            cn.Close();
+        }
     }
 }
