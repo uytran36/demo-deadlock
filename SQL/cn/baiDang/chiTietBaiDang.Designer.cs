@@ -143,6 +143,7 @@ namespace SQL.cn.baiDang
             this.btnOwner.TabIndex = 204;
             this.btnOwner.Text = "Chủ nhà";
             this.btnOwner.UseVisualStyleBackColor = true;
+            this.btnOwner.Click += new System.EventHandler(this.btnOwner_Click);
             // 
             // btnStaff
             // 
@@ -153,6 +154,7 @@ namespace SQL.cn.baiDang
             this.btnStaff.TabIndex = 202;
             this.btnStaff.Text = "Nhân viên";
             this.btnStaff.UseVisualStyleBackColor = true;
+            this.btnStaff.Click += new System.EventHandler(this.btnStaff_Click);
             // 
             // btnPost
             // 
@@ -173,6 +175,7 @@ namespace SQL.cn.baiDang
             this.btnCus.TabIndex = 201;
             this.btnCus.Text = "Khách hàng";
             this.btnCus.UseVisualStyleBackColor = true;
+            this.btnCus.Click += new System.EventHandler(this.btnCus_Click);
             // 
             // labelDetail
             // 

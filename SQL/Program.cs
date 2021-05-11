@@ -24,7 +24,7 @@ namespace SQL
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new dsBaiDang());
+            Application.Run(new dsChuNha());
         }
     }
 }
