@@ -55,22 +55,7 @@ namespace SQL.cn.chuNha
       
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            string cnstr = @"Data Source =.; Initial Catalog = qlnd; Integrated Security = True";
-            SqlConnection cn = new SqlConnection(cnstr);
-
-            SqlCommand cmd = new SqlCommand("sp_unrepeatableRead_sdt", cn);
-            cmd.CommandType = CommandType.StoredProcedure;
-
-            cn.Open();
-            int i = cmd.ExecuteNonQuery();
-
-            cn.Close();
-
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dataGridView1.DataSource = dt;
-            cn.Close();
+            
         }
        
         private void dsChuNha_Load(object sender, EventArgs e)
@@ -111,7 +96,7 @@ namespace SQL.cn.chuNha
                 var frm_chiTietChuNha = new ctietChuNha(maChuNha,hoTen, sdt, diaChi, "1", "1");
                 frm_chiTietChuNha.Location = this.Location;
                 frm_chiTietChuNha.StartPosition = FormStartPosition.Manual;
-                frm_chiTietChuNha.FormClosing += delegate { this.Show(); };
+                frm_chiTietChuNha.FormClosing += delegate { this.Show(); this.dsChuNha_Load(null, null); };
                 frm_chiTietChuNha.Show();
                 this.Hide();
             }

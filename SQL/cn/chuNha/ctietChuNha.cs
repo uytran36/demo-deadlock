@@ -104,7 +104,20 @@ namespace SQL.cn.chuNha
             string cnstr = @"Data Source =.; Initial Catalog = qlnd; Integrated Security = True";
             SqlConnection cn = new SqlConnection(cnstr);
 
-            SqlCommand cmd = new SqlCommand("sp_unrepeatableRead_sdt2", cn);
+            /*SqlCommand cmd = new SqlCommand("sp_unrepeatableRead_sdt2", cn);
+
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.Clear();
+            cmd.Parameters.Add("@maChuNha", SqlDbType.NChar).Value = this.maChuNha;
+            cmd.Parameters.Add("@sdt", SqlDbType.NChar).Value = tbSDT.Text;
+            cn.Open();
+
+            int i = cmd.ExecuteNonQuery();
+
+            cn.Close();*/
+
+            SqlCommand cmd = new SqlCommand("sp_lostUpdate_sdt", cn);
 
             cmd.CommandType = CommandType.StoredProcedure;
 
@@ -116,6 +129,7 @@ namespace SQL.cn.chuNha
             int i = cmd.ExecuteNonQuery();
 
             cn.Close();
+
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
