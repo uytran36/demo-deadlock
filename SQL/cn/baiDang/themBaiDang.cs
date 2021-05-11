@@ -59,6 +59,9 @@ namespace SQL.cn.baiDang
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
+            string cnstr = @"Data Source =.; Initial Catalog = qlnd; Integrated Security = True"; ;
+            SqlConnection cn = new SqlConnection(cnstr);
+            SqlCommand cmd;
             if (tbMaChiNhanh.Text == "" || tbBaiDang.Text == "" || tbDuong.Text == "" || tbQuan.Text == "" || tbThanhPho.Text == ""
                 || tbKhuVuc.Text == "" || tbIDChuNha.Text == "" || tbSoPhong.Text == "" || tbLoaiNha.Text == "" || tbND.Text == ""
                 || tbSLX.Text == "" || tbTinhTrang.Text == "")
@@ -67,10 +70,8 @@ namespace SQL.cn.baiDang
             }
             else
             {
-                string cnstr = @"Data Source =.; Initial Catalog = qlnd; Integrated Security = True";
-                SqlConnection cn = new SqlConnection(cnstr);
                 cn.Open();
-                SqlCommand cmd = new SqlCommand("addBD", cn);
+                cmd = new SqlCommand("addBD", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@add1", SqlDbType.NChar).Value = tbBaiDang.Text;
                 cmd.Parameters.Add("@add2", SqlDbType.NVarChar).Value = tbDuong.Text;
@@ -93,6 +94,29 @@ namespace SQL.cn.baiDang
                 this.Close();
                 cn.Close();
             }
+
+            cn.Open();
+            cmd = new SqlCommand("sp_phantom_dsNha2", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@maNha", SqlDbType.NChar).Value = tbBaiDang.Text;
+            cmd.Parameters.Add("@duong", SqlDbType.NVarChar).Value = tbDuong.Text;
+            cmd.Parameters.Add("@quan", SqlDbType.NVarChar).Value = tbQuan.Text;
+            cmd.Parameters.Add("@khuVuc", SqlDbType.NVarChar).Value = tbKhuVuc.Text;
+            cmd.Parameters.Add("@tp", SqlDbType.NVarChar).Value = tbThanhPho.Text;
+            cmd.Parameters.Add("@slx", SqlDbType.Int).Value = (int)Convert.ToInt32(tbSLX.Text);
+            cmd.Parameters.Add("@tt", SqlDbType.Int).Value = (int)Convert.ToInt32(tbTinhTrang.Text);
+            cmd.Parameters.Add("@sp", SqlDbType.Int).Value = (int)Convert.ToInt32(tbSoPhong.Text);
+            cmd.Parameters.Add("@ngDang", SqlDbType.DateTime).Value = Convert.ToDateTime(Convert.ToString(tbND.Text));
+            cmd.Parameters.Add("@ngHetHan", SqlDbType.DateTime).Value = Convert.ToDateTime(Convert.ToString(tbNHH.Text));
+            cmd.Parameters.Add("@giaCT", SqlDbType.Int).Value = (int)Convert.ToInt32(tbGiaThue.Text);
+            cmd.Parameters.Add("@giaBan", SqlDbType.Int).Value = (int)Convert.ToInt32(tbGiaBan.Text);
+            cmd.Parameters.Add("@maChiNhanh", SqlDbType.NChar).Value = tbMaChiNhanh.Text;
+            cmd.Parameters.Add("@maChuNha", SqlDbType.NChar).Value = tbIDChuNha.Text;
+            cmd.Parameters.Add("@maLoaiNha", SqlDbType.NChar).Value = tbLoaiNha.Text;
+            cmd.Parameters.Add("@daXoa", SqlDbType.Int).Value = 0;
+
+            cn.Close();
+            MessageBox.Show("Thêm thành công");
         }
     }
 }

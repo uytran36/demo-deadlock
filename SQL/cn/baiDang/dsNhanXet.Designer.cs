@@ -38,6 +38,8 @@ namespace SQL.cn.baiDang
             this.labelHello = new System.Windows.Forms.Label();
             this.btnUser = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,7 +50,7 @@ namespace SQL.cn.baiDang
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(1031, 313);
+            this.dataGridView1.Size = new System.Drawing.Size(1031, 285);
             this.dataGridView1.TabIndex = 34;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -136,11 +138,35 @@ namespace SQL.cn.baiDang
             this.btnLogout.Text = "Đăng xuất";
             this.btnLogout.UseVisualStyleBackColor = true;
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Location = new System.Drawing.Point(378, 484);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(100, 28);
+            this.btnRefresh.TabIndex = 212;
+            this.btnRefresh.Text = "Tải lại";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(591, 484);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(100, 28);
+            this.btnAdd.TabIndex = 213;
+            this.btnAdd.Text = "Thêm";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
             // dsNhanXet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1113, 525);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnOwner);
             this.Controls.Add(this.btnStaff);
             this.Controls.Add(this.btnPost);
@@ -170,5 +196,7 @@ namespace SQL.cn.baiDang
         private System.Windows.Forms.Label labelHello;
         private System.Windows.Forms.Button btnUser;
         private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.Button btnAdd;
     }
 }

@@ -107,5 +107,25 @@ namespace SQL.cn.baiDang
 
             this.Hide();
         }
+
+        private void btnPost_Click(object sender, EventArgs e)
+        {
+            string cnstr = @"Data Source =.; Initial Catalog = qlnd; Integrated Security = True";
+            SqlConnection cn = new SqlConnection(cnstr);
+
+            SqlCommand cmd = new SqlCommand("sp_phantom_dsNha", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cn.Open();
+            int i = cmd.ExecuteNonQuery();
+
+            cn.Close();
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridViewBaiDang.DataSource = dt;
+            cn.Close();
+        }
     }
 }

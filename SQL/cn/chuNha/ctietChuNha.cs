@@ -129,6 +129,7 @@ namespace SQL.cn.chuNha
             i = cmd.ExecuteNonQuery();
 
             cn.Close();
+            MessageBox.Show("Lưu thành công");
 
         }
 

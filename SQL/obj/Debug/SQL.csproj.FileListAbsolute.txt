@@ -98,3 +98,4 @@ D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.exe
 D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.pdb
 D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.cn.baiDang.chiTietNhanXet.resources
 D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.cn.baiDang.chiTietNhanXet.resources
+D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.cn.baiDang.themChiTietNhanXet.resources

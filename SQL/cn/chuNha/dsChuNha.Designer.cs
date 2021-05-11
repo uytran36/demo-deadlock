@@ -53,6 +53,7 @@ namespace SQL.cn.chuNha
             this.btnOwner.TabIndex = 60;
             this.btnOwner.Text = "Chủ nhà";
             this.btnOwner.UseVisualStyleBackColor = true;
+            this.btnOwner.Click += new System.EventHandler(this.btnOwner_Click);
             // 
             // btnStaff
             // 

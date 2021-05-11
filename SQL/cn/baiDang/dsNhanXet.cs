@@ -97,5 +97,35 @@ namespace SQL.cn.baiDang
 
             this.Hide();
         }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            string cnstr = @"Data Source =.; Initial Catalog = qlnd; Integrated Security = True";
+            SqlConnection cn = new SqlConnection(cnstr);
+
+            SqlCommand cmd = new SqlCommand("sp_phantom_nhanXet", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cn.Open();
+            int i = cmd.ExecuteNonQuery();
+
+            cn.Close();
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+            cn.Close();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            var frm_ThemCTNX = new themChiTietNhanXet();
+            frm_ThemCTNX.Location = this.Location;
+            frm_ThemCTNX.StartPosition = FormStartPosition.Manual;
+            frm_ThemCTNX.FormClosing += delegate { this.Show(); };
+            frm_ThemCTNX.Show();
+            this.Hide();
+        }
     }
 }

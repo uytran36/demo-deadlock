@@ -76,6 +76,12 @@
     <Compile Include="cn\baiDang\themBaiDang.Designer.cs">
       <DependentUpon>themBaiDang.cs</DependentUpon>
     </Compile>
+    <Compile Include="cn\baiDang\themChiTietNhanXet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cn\baiDang\themChiTietNhanXet.Designer.cs">
+      <DependentUpon>themChiTietNhanXet.cs</DependentUpon>
+    </Compile>
     <Compile Include="cn\chuNha\ctietChuNha.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -308,6 +314,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="cn\baiDang\themBaiDang.resx">
       <DependentUpon>themBaiDang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cn\baiDang\themChiTietNhanXet.resx">
+      <DependentUpon>themChiTietNhanXet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="cn\chuNha\ctietChuNha.resx">
       <DependentUpon>ctietChuNha.cs</DependentUpon>

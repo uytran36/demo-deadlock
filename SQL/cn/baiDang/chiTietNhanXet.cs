@@ -29,8 +29,6 @@ namespace SQL.cn.baiDang
         {
             string cnstr = @"Data Source =.; Initial Catalog = qlnd; Integrated Security = True";
             SqlConnection cn = new SqlConnection(cnstr);
-
-
             SqlCommand cmd = new SqlCommand("sp_lostUpdate_nhanXet", cn);
 
             cmd.CommandType = CommandType.StoredProcedure;
@@ -44,7 +42,7 @@ namespace SQL.cn.baiDang
 
             cn.Close();
 
-            MessageBox.Show("Cập nhật thành công");
+            MessageBox.Show("Lưu thành công");
         }
     }
 }
