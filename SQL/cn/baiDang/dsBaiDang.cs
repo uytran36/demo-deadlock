@@ -54,8 +54,6 @@ namespace SQL.cn.baiDang
             dataGridViewBaiDang.DataSource = dt;
             dataGridViewBaiDang.Columns.Remove("daXoa");
             dataGridViewBaiDang.ReadOnly = true;
-
-           
             cn.Close();
         }
 
@@ -63,6 +61,29 @@ namespace SQL.cn.baiDang
         {
             Form f = new themBaiDang();
             f.Show();
+        }
+
+        private void dataGridViewBaiDang_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string baidang = dataGridViewBaiDang.Rows[e.RowIndex].Cells["MaNha"].FormattedValue.ToString();
+            string duong = dataGridViewBaiDang.Rows[e.RowIndex].Cells["Duong"].FormattedValue.ToString();
+            string quan = dataGridViewBaiDang.Rows[e.RowIndex].Cells["Quan"].FormattedValue.ToString();
+            string khuvuc = dataGridViewBaiDang.Rows[e.RowIndex].Cells["KhuVuc"].FormattedValue.ToString();
+            string thanhpho = dataGridViewBaiDang.Rows[e.RowIndex].Cells["ThanhPho"].FormattedValue.ToString();
+            string soluotxem = dataGridViewBaiDang.Rows[e.RowIndex].Cells["SoLuotXem"].FormattedValue.ToString();
+            string tinhtrang = dataGridViewBaiDang.Rows[e.RowIndex].Cells["TinhTrang"].FormattedValue.ToString();
+            string sophong = dataGridViewBaiDang.Rows[e.RowIndex].Cells["SoPhong"].FormattedValue.ToString();
+            string ngaydang = dataGridViewBaiDang.Rows[e.RowIndex].Cells["NgayDang"].FormattedValue.ToString();
+            string ngayhethan = dataGridViewBaiDang.Rows[e.RowIndex].Cells["NgayHetHan"].FormattedValue.ToString();
+            string giathue = dataGridViewBaiDang.Rows[e.RowIndex].Cells["GiaChoThueMotThang"].FormattedValue.ToString();
+            string giaban = dataGridViewBaiDang.Rows[e.RowIndex].Cells["GiaBan"].FormattedValue.ToString();
+            string machinhanh = dataGridViewBaiDang.Rows[e.RowIndex].Cells["MaChiNhanh"].FormattedValue.ToString();
+            string idchunha = dataGridViewBaiDang.Rows[e.RowIndex].Cells["MaChuNha"].FormattedValue.ToString();
+            string loainha = dataGridViewBaiDang.Rows[e.RowIndex].Cells["MaLoaiNha"].FormattedValue.ToString();
+            Form f = new chiTietBaiDang(baidang, duong, quan, khuvuc, thanhpho, soluotxem, tinhtrang, sophong, 
+                ngaydang, ngayhethan, giathue, giaban, machinhanh, idchunha, loainha);
+            f.Show();
+            this.Hide();
         }
     }
 }

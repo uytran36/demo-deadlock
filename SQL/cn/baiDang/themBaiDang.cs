@@ -78,7 +78,6 @@ namespace SQL.cn.baiDang
                 cmd.Parameters.Add("@add14", SqlDbType.NChar).Value = tbIDChuNha.Text;
                 cmd.Parameters.Add("@add15", SqlDbType.NChar).Value = tbLoaiNha.Text;
                 cmd.Parameters.Add("@add16", SqlDbType.Int).Value = 0;
-
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Thêm thành công");
                 this.Close();
