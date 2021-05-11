@@ -7,6 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SQL.cn.baiDang;
+using SQL.cn.nhanVien;
+using SQL.cn.chuNha;
+using SQL.cn.khachHang;
+using System.Data.SqlClient;
 
 namespace SQL.cn.chuNha
 {
@@ -15,6 +20,59 @@ namespace SQL.cn.chuNha
         public themChuNha()
         {
             InitializeComponent();
+        }
+
+        private void btnCus_Click(object sender, EventArgs e)
+        {
+            Form f = new dsKhachHang();
+            f.Show();
+        }
+
+        private void btnPost_Click(object sender, EventArgs e)
+        {
+            Form f = new dsBaiDang();
+            f.Show();
+        }
+
+        private void btnStaff_Click(object sender, EventArgs e)
+        {
+            Form f = new dsNhanVien();
+            f.Show();
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            if (tbMaCN.Text == "" || tbDuong.Text == "" || tbQuan.Text == "" || tbThanhPho.Text == ""
+                || tbKhuVuc.Text == "" || tbTen.Text == "" || tbMaChiNhanh.Text == "" || tbMaNhanVien.Text == "" || tbSDT.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
+            }
+            else
+            {
+                String cnstr = @"Data Source =.; Initial Catalog = qlnd; Integrated Security = True";
+                SqlConnection cn = new SqlConnection(cnstr);
+                cn.Open();
+                SqlCommand cmd = new SqlCommand("sp_insertChuNha", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@machunha", SqlDbType.NChar).Value = tbMaCN.Text;
+                cmd.Parameters.Add("@tenchunha", SqlDbType.NVarChar).Value = tbTen.Text;
+                cmd.Parameters.Add("@sdt", SqlDbType.NChar).Value = tbMaCN.Text;
+                cmd.Parameters.Add("@duong", SqlDbType.NVarChar).Value = tbDuong.Text;
+                cmd.Parameters.Add("@quan", SqlDbType.NVarChar).Value = tbQuan.Text;
+                cmd.Parameters.Add("@khuvuc", SqlDbType.NVarChar).Value = tbKhuVuc.Text;
+                cmd.Parameters.Add("@tp", SqlDbType.NVarChar).Value = tbThanhPho.Text;
+                cmd.Parameters.Add("@daxoa", SqlDbType.Int).Value = 0;
+
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Thêm thành công");
+                this.Close();
+                cn.Close();
+            }
         }
     }
 }

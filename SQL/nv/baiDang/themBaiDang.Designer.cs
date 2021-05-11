@@ -35,7 +35,7 @@ namespace SQL.nv.baiDang
             this.btnStaff = new System.Windows.Forms.Button();
             this.btnPost = new System.Windows.Forms.Button();
             this.btnCus = new System.Windows.Forms.Button();
-            this.labelHello = new System.Windows.Forms.Label();
+       
             this.btnUser = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -522,7 +522,6 @@ namespace SQL.nv.baiDang
         private System.Windows.Forms.Button btnStaff;
         private System.Windows.Forms.Button btnPost;
         private System.Windows.Forms.Button btnCus;
-        private System.Windows.Forms.Label labelHello;
         private System.Windows.Forms.Button btnUser;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.TextBox textBox1;

@@ -61,6 +61,7 @@ namespace SQL.cn.chuNha
             this.btnStaff.TabIndex = 76;
             this.btnStaff.Text = "Nhân viên";
             this.btnStaff.UseVisualStyleBackColor = true;
+            this.btnStaff.Click += new System.EventHandler(this.btnStaff_Click);
             // 
             // btnPost
             // 
@@ -71,6 +72,7 @@ namespace SQL.cn.chuNha
             this.btnPost.TabIndex = 77;
             this.btnPost.Text = "Bài đăng";
             this.btnPost.UseVisualStyleBackColor = true;
+            this.btnPost.Click += new System.EventHandler(this.btnPost_Click);
             // 
             // btnCus
             // 
@@ -81,6 +83,7 @@ namespace SQL.cn.chuNha
             this.btnCus.TabIndex = 75;
             this.btnCus.Text = "Khách hàng";
             this.btnCus.UseVisualStyleBackColor = true;
+            this.btnCus.Click += new System.EventHandler(this.btnCus_Click);
             // 
             // labelHello
             // 
@@ -160,6 +163,7 @@ namespace SQL.cn.chuNha
             this.Controls.Add(this.btnLogout);
             this.Name = "dsNhaSoHua";
             this.Text = "dsNhaSoHua";
+            this.Load += new System.EventHandler(this.dsNhaSoHua_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

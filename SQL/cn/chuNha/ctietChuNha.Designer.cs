@@ -264,7 +264,6 @@ namespace SQL.cn.chuNha
             this.btnLichSuDang.TabIndex = 58;
             this.btnLichSuDang.Text = "Lịch sử đăng";
             this.btnLichSuDang.UseVisualStyleBackColor = true;
-            this.btnLichSuDang.Click += new System.EventHandler(this.btnLichSuThue_Click);
             // 
             // btnLogout
             // 

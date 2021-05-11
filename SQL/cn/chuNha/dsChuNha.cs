@@ -7,8 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 using SQL.cn.khachHang;
+using SQL.cn.chuNha;
+using SQL.cn.nhanVien;
+using SQL.cn.baiDang;
+using System.Data.SqlClient;
 
 namespace SQL.cn.chuNha
 {
@@ -19,39 +22,48 @@ namespace SQL.cn.chuNha
             InitializeComponent();
         }
 
-        private void dsChuNha_load(object sender, EventArgs e)
-        {
-            string cnstr = @"Data Source =.; Initial Catalog = qlnd; Integrated Security = True";
-            SqlConnection cn = new SqlConnection(cnstr);
-
-            SqlCommand cmd = new SqlCommand("sp_xemcn", cn);
-            cmd.CommandType = CommandType.StoredProcedure;
-           
-            cn.Open();
-            int i = cmd.ExecuteNonQuery();
-
-            cn.Close();
-
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dataView.DataSource = dt;
-            cn.Close();
-        }
-
         private void btnCus_Click(object sender, EventArgs e)
         {
-            var frm_KhachHang = new dsKhachHang();
-            frm_KhachHang.Location = this.Location;
-            frm_KhachHang.StartPosition = FormStartPosition.Manual;
-            frm_KhachHang.FormClosing += delegate { this.Show(); };
-            frm_KhachHang.Show();
-            this.Hide();
+            Form f = new dsKhachHang();
+            f.Show();
         }
 
         private void btnPost_Click(object sender, EventArgs e)
         {
+            Form f = new dsBaiDang();
+            f.Show();
+        }
 
+        private void btnStaff_Click(object sender, EventArgs e)
+        {
+            Form f = new dsNhanVien();
+            f.Show();
+        }
+
+      
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            Form f = new themChuNha();
+            f.Show();
+        }
+       
+        private void dsChuNha_Load(object sender, EventArgs e)
+        {
+            String cnstr = @"Data Source =.; Initial Catalog = qlnd; Integrated Security = True";
+            SqlConnection cn = new SqlConnection(cnstr);
+
+            cn.Open();
+            SqlCommand cmd = new SqlCommand("sp_xemcn", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+            dataGridView1.Columns.Remove("daXoa");
+            dataGridView1.ReadOnly = true;
+            cn.Close();
         }
     }
 }

@@ -17,9 +17,5 @@ namespace SQL.cn.chuNha
             InitializeComponent();
         }
 
-        private void btnLichSuThue_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

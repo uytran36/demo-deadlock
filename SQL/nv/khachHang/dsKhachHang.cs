@@ -11,7 +11,7 @@ using System.Data.SqlClient;
 using SQL.nv.baiDang;
 using SQL.nv.chuNha;
 
-namespace SQL
+namespace SQL.nv.khachHang
 {
     public partial class dsKhachHang : Form
     {
