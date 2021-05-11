@@ -82,6 +82,7 @@ namespace SQL.cn.baiDang
             this.btnNhanXet.TabIndex = 199;
             this.btnNhanXet.Text = "Nhận xét";
             this.btnNhanXet.UseVisualStyleBackColor = true;
+            this.btnNhanXet.Click += new System.EventHandler(this.btnNhanXet_Click);
             // 
             // btnXoa
             // 

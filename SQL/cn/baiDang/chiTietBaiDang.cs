@@ -69,7 +69,7 @@ namespace SQL.cn.baiDang
             int i = cmd.ExecuteNonQuery();
 
             cn.Close();
-            
+
         }
 
         private void btnCus_Click(object sender, EventArgs e)
@@ -100,6 +100,16 @@ namespace SQL.cn.baiDang
             frm_NhanVien.StartPosition = FormStartPosition.Manual;
             frm_NhanVien.FormClosing += delegate { this.Show(); };
             frm_NhanVien.Show();
+            this.Hide();
+        }
+
+        private void btnNhanXet_Click(object sender, EventArgs e)
+        {
+            var frm_NhanXet = new dsNhanXet(tbBaiDang.Text);
+            frm_NhanXet.Location = this.Location;
+            frm_NhanXet.StartPosition = FormStartPosition.Manual;
+            frm_NhanXet.FormClosing += delegate { this.Show(); };
+            frm_NhanXet.Show();
             this.Hide();
         }
     }

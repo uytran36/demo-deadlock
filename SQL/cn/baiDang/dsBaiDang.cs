@@ -112,7 +112,7 @@ namespace SQL.cn.baiDang
                 ngaydang, ngayhethan, giathue, giaban, machinhanh, idchunha, loainha);
             frm_chiTietBD.Location = this.Location;
             frm_chiTietBD.StartPosition = FormStartPosition.Manual;
-            frm_chiTietBD.FormClosing += delegate { this.Show(); };
+            frm_chiTietBD.FormClosing += delegate { this.Show(); this.dsBaiDang_Load(null, null); };
             frm_chiTietBD.Show();
 
             this.Hide();
