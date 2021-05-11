@@ -35,7 +35,6 @@ namespace SQL.nv.baiDang
             this.labelList = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnOwner = new System.Windows.Forms.Button();
-            this.btnStaff = new System.Windows.Forms.Button();
             this.btnPost = new System.Windows.Forms.Button();
             this.btnCus = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -71,6 +70,7 @@ namespace SQL.nv.baiDang
             this.dataGridViewBaiDang.RowHeadersWidth = 51;
             this.dataGridViewBaiDang.Size = new System.Drawing.Size(1031, 366);
             this.dataGridViewBaiDang.TabIndex = 31;
+            this.dataGridViewBaiDang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewBaiDang_CellClick);
             // 
             // labelList
             // 
@@ -88,39 +88,31 @@ namespace SQL.nv.baiDang
             this.label1.Location = new System.Drawing.Point(44, 14);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 17);
+            this.label1.Size = new System.Drawing.Size(106, 17);
             this.label1.TabIndex = 34;
-            this.label1.Text = "Xin chào, CHINHANH01";
+            this.label1.Text = "Xin chào, NV01";
             // 
             // btnOwner
             // 
-            this.btnOwner.Location = new System.Drawing.Point(550, 51);
+            this.btnOwner.Location = new System.Drawing.Point(826, 51);
             this.btnOwner.Margin = new System.Windows.Forms.Padding(4);
             this.btnOwner.Name = "btnOwner";
             this.btnOwner.Size = new System.Drawing.Size(251, 64);
             this.btnOwner.TabIndex = 208;
             this.btnOwner.Text = "Chủ nhà";
             this.btnOwner.UseVisualStyleBackColor = true;
-            // 
-            // btnStaff
-            // 
-            this.btnStaff.Location = new System.Drawing.Point(809, 51);
-            this.btnStaff.Margin = new System.Windows.Forms.Padding(4);
-            this.btnStaff.Name = "btnStaff";
-            this.btnStaff.Size = new System.Drawing.Size(269, 64);
-            this.btnStaff.TabIndex = 206;
-            this.btnStaff.Text = "Nhân viên";
-            this.btnStaff.UseVisualStyleBackColor = true;
+            this.btnOwner.Click += new System.EventHandler(this.btnOwner_Click);
             // 
             // btnPost
             // 
-            this.btnPost.Location = new System.Drawing.Point(303, 51);
+            this.btnPost.Location = new System.Drawing.Point(460, 51);
             this.btnPost.Margin = new System.Windows.Forms.Padding(4);
             this.btnPost.Name = "btnPost";
             this.btnPost.Size = new System.Drawing.Size(239, 64);
             this.btnPost.TabIndex = 207;
             this.btnPost.Text = "Bài đăng";
             this.btnPost.UseVisualStyleBackColor = true;
+            this.btnPost.Click += new System.EventHandler(this.btnPost_Click);
             // 
             // btnCus
             // 
@@ -131,6 +123,7 @@ namespace SQL.nv.baiDang
             this.btnCus.TabIndex = 205;
             this.btnCus.Text = "Khách hàng";
             this.btnCus.UseVisualStyleBackColor = true;
+            this.btnCus.Click += new System.EventHandler(this.btnCus_Click);
             // 
             // btnAdd
             // 
@@ -141,6 +134,7 @@ namespace SQL.nv.baiDang
             this.btnAdd.TabIndex = 209;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // dsBaiDang
             // 
@@ -149,7 +143,6 @@ namespace SQL.nv.baiDang
             this.ClientSize = new System.Drawing.Size(1120, 605);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnOwner);
-            this.Controls.Add(this.btnStaff);
             this.Controls.Add(this.btnPost);
             this.Controls.Add(this.btnCus);
             this.Controls.Add(this.label1);
@@ -159,6 +152,7 @@ namespace SQL.nv.baiDang
             this.Controls.Add(this.labelList);
             this.Name = "dsBaiDang";
             this.Text = "dsBaiDang";
+            this.Load += new System.EventHandler(this.dsBaiDang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBaiDang)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -173,7 +167,6 @@ namespace SQL.nv.baiDang
         private System.Windows.Forms.Label labelList;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnOwner;
-        private System.Windows.Forms.Button btnStaff;
         private System.Windows.Forms.Button btnPost;
         private System.Windows.Forms.Button btnCus;
         private System.Windows.Forms.Button btnAdd;

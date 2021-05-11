@@ -115,5 +115,10 @@ namespace SQL.cn.baiDang
             frm_NhanXet.Show();
             this.Hide();
         }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -35,7 +35,6 @@ namespace SQL.nv.baiDang
             this.btnStaff = new System.Windows.Forms.Button();
             this.btnPost = new System.Windows.Forms.Button();
             this.btnCus = new System.Windows.Forms.Button();
-       
             this.btnUser = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -95,7 +94,7 @@ namespace SQL.nv.baiDang
             // 
             // btnOwner
             // 
-            this.btnOwner.Location = new System.Drawing.Point(556, 44);
+            this.btnOwner.Location = new System.Drawing.Point(788, 59);
             this.btnOwner.Margin = new System.Windows.Forms.Padding(4);
             this.btnOwner.Name = "btnOwner";
             this.btnOwner.Size = new System.Drawing.Size(251, 64);
@@ -115,7 +114,7 @@ namespace SQL.nv.baiDang
             // 
             // btnPost
             // 
-            this.btnPost.Location = new System.Drawing.Point(309, 44);
+            this.btnPost.Location = new System.Drawing.Point(434, 59);
             this.btnPost.Margin = new System.Windows.Forms.Padding(4);
             this.btnPost.Name = "btnPost";
             this.btnPost.Size = new System.Drawing.Size(239, 64);
@@ -125,7 +124,7 @@ namespace SQL.nv.baiDang
             // 
             // btnCus
             // 
-            this.btnCus.Location = new System.Drawing.Point(49, 44);
+            this.btnCus.Location = new System.Drawing.Point(26, 59);
             this.btnCus.Margin = new System.Windows.Forms.Padding(4);
             this.btnCus.Name = "btnCus";
             this.btnCus.Size = new System.Drawing.Size(252, 64);
@@ -133,19 +132,9 @@ namespace SQL.nv.baiDang
             this.btnCus.Text = "Khách hàng";
             this.btnCus.UseVisualStyleBackColor = true;
             // 
-            // labelHello
-            // 
-            //this.labelHello.AutoSize = true;
-            //this.labelHello.Location = new System.Drawing.Point(47, 15);
-            //this.labelHello.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            //this.labelHello.Name = "labelHello";
-            //this.labelHello.Size = new System.Drawing.Size(158, 17);
-            //this.labelHello.TabIndex = 215;
-            //this.labelHello.Text = "Xin chào, CHINHANH01";
-            // 
             // btnUser
             // 
-            this.btnUser.Location = new System.Drawing.Point(874, 9);
+            this.btnUser.Location = new System.Drawing.Point(831, 13);
             this.btnUser.Margin = new System.Windows.Forms.Padding(4);
             this.btnUser.Name = "btnUser";
             this.btnUser.Size = new System.Drawing.Size(100, 28);
@@ -155,7 +144,7 @@ namespace SQL.nv.baiDang
             // 
             // btnLogout
             // 
-            this.btnLogout.Location = new System.Drawing.Point(982, 9);
+            this.btnLogout.Location = new System.Drawing.Point(939, 13);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(100, 28);
