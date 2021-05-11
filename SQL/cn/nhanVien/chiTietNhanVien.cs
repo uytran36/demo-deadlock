@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -89,6 +90,35 @@ namespace SQL.cn.nhanVien
             frm_LSXem.FormClosing += delegate { this.Show(); };
             frm_LSXem.Show();
             this.Hide();
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            string cnstr = @"Data Source =.; Initial Catalog = qlnd; Integrated Security = True";
+            SqlConnection cn = new SqlConnection(cnstr);
+
+            SqlCommand cmd = new SqlCommand("sp_updatenv", cn);
+
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.Clear();
+            cmd.Parameters.Add("@add1", SqlDbType.NChar).Value = tbIDNhanVien.Text;
+            cmd.Parameters.Add("@add2", SqlDbType.NVarChar).Value = tbName.Text;
+            cmd.Parameters.Add("@add3", SqlDbType.Date).Value = tbNgaySinh.Text;
+            cmd.Parameters.Add("@add4", SqlDbType.NVarChar).Value = tbGioiTinh.Text;
+            cmd.Parameters.Add("@add5", SqlDbType.NVarChar).Value = tbDuong.Text;
+            cmd.Parameters.Add("@add6", SqlDbType.NVarChar).Value = tbQuan.Text;
+            cmd.Parameters.Add("@add7", SqlDbType.NVarChar).Value = tbThanhPho.Text;
+            cmd.Parameters.Add("@add8", SqlDbType.NVarChar).Value = tbKhuVuc.Text;
+            cmd.Parameters.Add("@add9", SqlDbType.NChar).Value = tbSdt.Text;
+            cmd.Parameters.Add("@add10", SqlDbType.NChar).Value = tbIDChiNhanh.Text;
+            cmd.Parameters.Add("@add11", SqlDbType.Int).Value = 0;
+            cn.Open();
+
+            int i = cmd.ExecuteNonQuery();
+
+            cn.Close();
+            MessageBox.Show("Cập nhập thành công");
         }
     }
 }
