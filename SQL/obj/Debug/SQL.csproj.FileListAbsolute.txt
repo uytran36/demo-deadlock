@@ -35,13 +35,10 @@ D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.chuNha.themChuNha.r
 D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.ctietLSXem.resources
 D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.dsBaiDangTuongThich.resources
 D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.dsKhachHang.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.ctietKhachHang.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.dsHopDong.resources
 D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.ctietHopDong.resources
 D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.dsLichSuThue.resources
 D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.dsLichSuXem.resources
 D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.Properties.Resources.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.themHopDong.resources
 D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.csproj.GenerateResource.cache
 D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.csproj.CoreCompileInputs.cache
 D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.exe
@@ -99,3 +96,7 @@ D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.pdb
 D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.cn.baiDang.chiTietNhanXet.resources
 D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.cn.baiDang.chiTietNhanXet.resources
 D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.cn.baiDang.themChiTietNhanXet.resources
+D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.ctietKhachHang.resources
+D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.dsHopDong.resources
+D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.themHopDong.resources
+D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.themLSXem.resources

@@ -93,7 +93,12 @@ namespace SQL.nv.khachHang
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-           
+            var frm_ThemLSX = new themLSXem();
+            frm_ThemLSX.Location = this.Location;
+            frm_ThemLSX.StartPosition = FormStartPosition.Manual;
+            frm_ThemLSX.FormClosing += delegate { this.Show(); };
+            frm_ThemLSX.Show();
+            this.Hide();
         }
 
         private void btnTaiLai_Click(object sender, EventArgs e)
