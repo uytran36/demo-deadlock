@@ -1,4 +1,4 @@
-﻿namespace SQL
+﻿namespace SQL.nv.khachHang
 {
     partial class dsKhachHang
     {

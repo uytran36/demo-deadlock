@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SQL.cn.baiDang;
+using SQL.nv.khachHang;
 namespace SQL
 {
     static class Program
@@ -16,7 +17,7 @@ namespace SQL
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new dsBaiDang());
+            Application.Run(new dsLichSuXem());
         }
     }
 }

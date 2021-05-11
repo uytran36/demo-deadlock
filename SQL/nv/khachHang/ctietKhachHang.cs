@@ -11,7 +11,7 @@ using SQL.nv.baiDang;
 using SQL.nv.chuNha;
 using SQL.nv.khachHang;
 
-namespace SQL
+namespace SQL.nv.khachHang
 {
     public partial class ctietKhachHang : Form
     {
