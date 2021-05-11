@@ -23,20 +23,33 @@ namespace SQL.cn.baiDang
 
         private void btnCus_Click(object sender, EventArgs e)
         {
-            Form f = new dsKhachHang();
-            f.Show();
+            var frm_KhachHang = new dsKhachHang();
+            frm_KhachHang.Location = this.Location;
+            frm_KhachHang.StartPosition = FormStartPosition.Manual;
+            frm_KhachHang.FormClosing += delegate { this.Show(); };
+            frm_KhachHang.Show();
+            this.Hide();
         }
 
         private void btnOwner_Click(object sender, EventArgs e)
         {
-            Form f = new dsChuNha();
-            f.Show();
+            var frm_ChuNha = new dsChuNha();
+            frm_ChuNha.Location = this.Location;
+            frm_ChuNha.StartPosition = FormStartPosition.Manual;
+            frm_ChuNha.FormClosing += delegate { this.Show(); };
+            frm_ChuNha.Show();
+            this.Hide();
         }
+    
 
         private void btnStaff_Click(object sender, EventArgs e)
         {
-            Form f = new dsNhanVien();
-            f.Show();
+            var frm_NhanVien = new dsNhanVien();
+            frm_NhanVien.Location = this.Location;
+            frm_NhanVien.StartPosition = FormStartPosition.Manual;
+            frm_NhanVien.FormClosing += delegate { this.Show(); };
+            frm_NhanVien.Show();
+            this.Hide();
         }
 
         private void dsBaiDang_Load(object sender, EventArgs e)
@@ -59,8 +72,22 @@ namespace SQL.cn.baiDang
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            Form f = new themBaiDang();
-            f.Show();
+            string cnstr = @"Data Source =.; Initial Catalog = qlnd; Integrated Security = True";
+            SqlConnection cn = new SqlConnection(cnstr);
+
+            SqlCommand cmd = new SqlCommand("sp_unrepeatableRead_tinhTrang", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cn.Open();
+            int i = cmd.ExecuteNonQuery();
+
+            cn.Close();
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridViewBaiDang.DataSource = dt;
+            cn.Close();
         }
 
         private void dataGridViewBaiDang_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -80,9 +107,14 @@ namespace SQL.cn.baiDang
             string machinhanh = dataGridViewBaiDang.Rows[e.RowIndex].Cells["MaChiNhanh"].FormattedValue.ToString();
             string idchunha = dataGridViewBaiDang.Rows[e.RowIndex].Cells["MaChuNha"].FormattedValue.ToString();
             string loainha = dataGridViewBaiDang.Rows[e.RowIndex].Cells["MaLoaiNha"].FormattedValue.ToString();
-            Form f = new chiTietBaiDang(baidang, duong, quan, khuvuc, thanhpho, soluotxem, tinhtrang, sophong, 
+
+            var frm_chiTietBD = new chiTietBaiDang(baidang, duong, quan, khuvuc, thanhpho, soluotxem, tinhtrang, sophong,
                 ngaydang, ngayhethan, giathue, giaban, machinhanh, idchunha, loainha);
-            f.Show();
+            frm_chiTietBD.Location = this.Location;
+            frm_chiTietBD.StartPosition = FormStartPosition.Manual;
+            frm_chiTietBD.FormClosing += delegate { this.Show(); };
+            frm_chiTietBD.Show();
+
             this.Hide();
         }
     }

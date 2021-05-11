@@ -1,4 +1,7 @@
-﻿using System;
+﻿using SQL.cn.chuNha;
+using SQL.cn.khachHang;
+using SQL.cn.nhanVien;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -51,9 +54,53 @@ namespace SQL.cn.baiDang
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            Form f = new dsBaiDang();
-            f.Show();
-            this.Close();
+            string cnstr = @"Data Source =.; Initial Catalog = qlnd; Integrated Security = True";
+            SqlConnection cn = new SqlConnection(cnstr);
+
+            SqlCommand cmd = new SqlCommand("sp_unrepeatableRead_tinhTrang2", cn);
+
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.Clear();
+            cmd.Parameters.Add("@maNha", SqlDbType.NChar).Value = tbBaiDang.Text;
+            cmd.Parameters.Add("@tt", SqlDbType.Int).Value = Convert.ToInt32(tbTinhTrang.Text);
+            cn.Open();
+            
+            int i = cmd.ExecuteNonQuery();
+
+            cn.Close();
+            
+        }
+
+        private void btnCus_Click(object sender, EventArgs e)
+        {
+            var frm_KhachHang = new dsKhachHang();
+            frm_KhachHang.Location = this.Location;
+            frm_KhachHang.StartPosition = FormStartPosition.Manual;
+            frm_KhachHang.FormClosing += delegate { this.Show(); };
+            frm_KhachHang.Show();
+            this.Hide();
+        }
+    
+
+        private void btnOwner_Click(object sender, EventArgs e)
+        {
+            var frm_ChuNha = new dsChuNha();
+            frm_ChuNha.Location = this.Location;
+            frm_ChuNha.StartPosition = FormStartPosition.Manual;
+            frm_ChuNha.FormClosing += delegate { this.Show(); };
+            frm_ChuNha.Show();
+            this.Hide();
+        }
+
+        private void btnStaff_Click(object sender, EventArgs e)
+        {
+            var frm_NhanVien = new dsNhanVien();
+            frm_NhanVien.Location = this.Location;
+            frm_NhanVien.StartPosition = FormStartPosition.Manual;
+            frm_NhanVien.FormClosing += delegate { this.Show(); };
+            frm_NhanVien.Show();
+            this.Hide();
         }
     }
 }

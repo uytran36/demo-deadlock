@@ -106,7 +106,8 @@ namespace SQL.cn.chuNha
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(1031, 311);
             this.dataGridView1.TabIndex = 55;
-            
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
             // labelList
             // 
             this.labelList.AutoSize = true;

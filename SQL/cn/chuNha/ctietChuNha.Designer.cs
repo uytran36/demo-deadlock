@@ -74,6 +74,7 @@ namespace SQL.cn.chuNha
             this.btnStaff.TabIndex = 76;
             this.btnStaff.Text = "Nhân viên";
             this.btnStaff.UseVisualStyleBackColor = true;
+            this.btnStaff.Click += new System.EventHandler(this.btnStaff_Click);
             // 
             // btnPost
             // 
@@ -84,6 +85,7 @@ namespace SQL.cn.chuNha
             this.btnPost.TabIndex = 77;
             this.btnPost.Text = "Bài đăng";
             this.btnPost.UseVisualStyleBackColor = true;
+            this.btnPost.Click += new System.EventHandler(this.btnPost_Click);
             // 
             // btnCus
             // 
@@ -94,6 +96,7 @@ namespace SQL.cn.chuNha
             this.btnCus.TabIndex = 75;
             this.btnCus.Text = "Khách hàng";
             this.btnCus.UseVisualStyleBackColor = true;
+            this.btnCus.Click += new System.EventHandler(this.btnCus_Click);
             // 
             // tbMaNhanVien
             // 
@@ -214,6 +217,7 @@ namespace SQL.cn.chuNha
             this.btnHopDong.TabIndex = 53;
             this.btnHopDong.Text = "Hợp đồng";
             this.btnHopDong.UseVisualStyleBackColor = true;
+            this.btnHopDong.Click += new System.EventHandler(this.btnHopDong_Click);
             // 
             // btnUser
             // 
@@ -234,6 +238,7 @@ namespace SQL.cn.chuNha
             this.btnXoa.TabIndex = 56;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnLichSuBan
             // 
@@ -244,6 +249,7 @@ namespace SQL.cn.chuNha
             this.btnLichSuBan.TabIndex = 55;
             this.btnLichSuBan.Text = "Lịch sử bán";
             this.btnLichSuBan.UseVisualStyleBackColor = true;
+            this.btnLichSuBan.Click += new System.EventHandler(this.btnLichSuBan_Click);
             // 
             // btnLuu
             // 
@@ -254,6 +260,7 @@ namespace SQL.cn.chuNha
             this.btnLuu.TabIndex = 57;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnLichSuDang
             // 
@@ -264,6 +271,7 @@ namespace SQL.cn.chuNha
             this.btnLichSuDang.TabIndex = 58;
             this.btnLichSuDang.Text = "Lịch sử đăng";
             this.btnLichSuDang.UseVisualStyleBackColor = true;
+            this.btnLichSuDang.Click += new System.EventHandler(this.btnLichSuDang_Click);
             // 
             // btnLogout
             // 
@@ -284,6 +292,7 @@ namespace SQL.cn.chuNha
             this.btnDSN.TabIndex = 79;
             this.btnDSN.Text = "Danh sách nhà";
             this.btnDSN.UseVisualStyleBackColor = true;
+            this.btnDSN.Click += new System.EventHandler(this.btnDSN_Click);
             // 
             // ctietChuNha
             // 
