@@ -50,6 +50,7 @@ namespace SQL.cn.baiDang
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(1031, 313);
             this.dataGridView1.TabIndex = 34;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // labelList
             // 
@@ -57,9 +58,9 @@ namespace SQL.cn.baiDang
             this.labelList.Location = new System.Drawing.Point(47, 139);
             this.labelList.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelList.Name = "labelList";
-            this.labelList.Size = new System.Drawing.Size(232, 17);
+            this.labelList.Size = new System.Drawing.Size(220, 17);
             this.labelList.TabIndex = 33;
-            this.labelList.Text = "Danh sách nhận xét của bài đăng 1";
+            this.labelList.Text = "Danh sách nhận xét của bài đăng";
             // 
             // btnOwner
             // 
@@ -151,6 +152,7 @@ namespace SQL.cn.baiDang
             this.Controls.Add(this.labelList);
             this.Name = "dsNhanXet";
             this.Text = "dsNhanXet";
+            this.Load += new System.EventHandler(this.dsNhanXet_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

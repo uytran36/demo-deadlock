@@ -7,8 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 using SQL.cn.khachHang;
+using SQL.cn.chuNha;
+using SQL.cn.nhanVien;
+using SQL.cn.baiDang;
+using System.Data.SqlClient;
 
 namespace SQL.cn.chuNha
 {
@@ -17,26 +20,6 @@ namespace SQL.cn.chuNha
         public dsChuNha()
         {
             InitializeComponent();
-        }
-
-        private void dsChuNha_load(object sender, EventArgs e)
-        {
-            string cnstr = @"Data Source =.; Initial Catalog = qlnd; Integrated Security = True";
-            SqlConnection cn = new SqlConnection(cnstr);
-
-            SqlCommand cmd = new SqlCommand("sp_xemcn", cn);
-            cmd.CommandType = CommandType.StoredProcedure;
-           
-            cn.Open();
-            int i = cmd.ExecuteNonQuery();
-
-            cn.Close();
-
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dataView.DataSource = dt;
-            cn.Close();
         }
 
         private void btnCus_Click(object sender, EventArgs e)
@@ -51,7 +34,78 @@ namespace SQL.cn.chuNha
 
         private void btnPost_Click(object sender, EventArgs e)
         {
-
+            var frm_baiDang = new dsBaiDang();
+            frm_baiDang.Location = this.Location;
+            frm_baiDang.StartPosition = FormStartPosition.Manual;
+            frm_baiDang.FormClosing += delegate { this.Show(); };
+            frm_baiDang.Show();
+            this.Hide();
         }
+
+        private void btnStaff_Click(object sender, EventArgs e)
+        {
+            var frm_NhanVien = new dsNhanVien();
+            frm_NhanVien.Location = this.Location;
+            frm_NhanVien.StartPosition = FormStartPosition.Manual;
+            frm_NhanVien.FormClosing += delegate { this.Show(); };
+            frm_NhanVien.Show();
+            this.Hide();
+        }
+
+      
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            var frm_themCN = new themChuNha();
+            frm_themCN.Location = this.Location;
+            frm_themCN.StartPosition = FormStartPosition.Manual;
+            frm_themCN.FormClosing += delegate { this.Show(); };
+            frm_themCN.Show();
+            this.Hide();
+        }
+       
+        private void dsChuNha_Load(object sender, EventArgs e)
+        {
+            String cnstr = @"Data Source =.; Initial Catalog = qlnd; Integrated Security = True";
+            SqlConnection cn = new SqlConnection(cnstr);
+
+            cn.Open();
+            SqlCommand cmd = new SqlCommand("sp_xemcn", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+            dataGridView1.Columns.Remove("daXoa");
+            dataGridView1.ReadOnly = true;
+            cn.Close();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
+            {
+                dataGridView1.CurrentRow.Selected = true;
+                String maChuNha,hoTen, sdt, diaChi, duong, quan, thanhPho, khuVuc;
+                maChuNha = dataGridView1.Rows[e.RowIndex].Cells["MaChuNha"].FormattedValue.ToString();
+                hoTen = dataGridView1.Rows[e.RowIndex].Cells["TenChuNha"].FormattedValue.ToString();
+                sdt = dataGridView1.Rows[e.RowIndex].Cells["SoDienThoai"].FormattedValue.ToString();
+                duong = dataGridView1.Rows[e.RowIndex].Cells["Duong"].FormattedValue.ToString();
+                quan = dataGridView1.Rows[e.RowIndex].Cells["Quan"].FormattedValue.ToString();
+                thanhPho = dataGridView1.Rows[e.RowIndex].Cells["ThanhPho"].FormattedValue.ToString();
+                khuVuc = dataGridView1.Rows[e.RowIndex].Cells["KhuVuc"].FormattedValue.ToString();
+                diaChi = duong + ", " + quan + ", " + thanhPho + ", " + khuVuc;
+             
+
+                var frm_chiTietChuNha = new ctietChuNha(maChuNha,hoTen, sdt, diaChi, "1", "1");
+                frm_chiTietChuNha.Location = this.Location;
+                frm_chiTietChuNha.StartPosition = FormStartPosition.Manual;
+                frm_chiTietChuNha.FormClosing += delegate { this.Show(); this.dsChuNha_Load(null, null); };
+                frm_chiTietChuNha.Show();
+                this.Hide();
+            }
+        }
+
     }
 }

@@ -71,6 +71,7 @@ namespace SQL.cn.baiDang
             this.dataGridViewBaiDang.RowHeadersWidth = 51;
             this.dataGridViewBaiDang.Size = new System.Drawing.Size(1031, 366);
             this.dataGridViewBaiDang.TabIndex = 31;
+            this.dataGridViewBaiDang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewBaiDang_CellClick);
             // 
             // labelList
             // 
