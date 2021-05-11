@@ -13,9 +13,9 @@ using System.Windows.Forms;
 
 namespace SQL.nv.chuNha
 {
-    public partial class themChuNha : Form
+    public partial class themChiTietLSDang : Form
     {
-        public themChuNha()
+        public themChiTietLSDang()
         {
             InitializeComponent();
         }
@@ -42,27 +42,23 @@ namespace SQL.nv.chuNha
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            if (tbMaCN.Text == "" || tbDuong.Text == "" || tbQuan.Text == "" || tbThanhPho.Text == ""
-                || tbKhuVuc.Text == "" || tbTen.Text == "" || tbMaChiNhanh.Text == "" || tbMaNhanVien.Text == "" || tbSDT.Text == "")
+            string cnstr = @"Data Source =.; Initial Catalog = qlnd; Integrated Security = True"; ;
+            SqlConnection cn = new SqlConnection(cnstr);
+            SqlCommand cmd;
+
+            if (tbIDLSDang.Text == "" || tbIDMaChuNha.Text == "" || tbNha.Text == "" || tbNgDang.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
             }
             else
             {
-                String cnstr = @"Data Source =.; Initial Catalog = qlnd; Integrated Security = True";
-                SqlConnection cn = new SqlConnection(cnstr);
                 cn.Open();
-                SqlCommand cmd = new SqlCommand("sp_insertChuNha", cn);
+                cmd = new SqlCommand("sp_insertLichSuDang", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("@machunha", SqlDbType.NChar).Value = tbMaCN.Text;
-                cmd.Parameters.Add("@tenchunha", SqlDbType.NVarChar).Value = tbTen.Text;
-                cmd.Parameters.Add("@sdt", SqlDbType.NChar).Value = tbMaCN.Text;
-                cmd.Parameters.Add("@duong", SqlDbType.NVarChar).Value = tbDuong.Text;
-                cmd.Parameters.Add("@quan", SqlDbType.NVarChar).Value = tbQuan.Text;
-                cmd.Parameters.Add("@khuvuc", SqlDbType.NVarChar).Value = tbKhuVuc.Text;
-                cmd.Parameters.Add("@tp", SqlDbType.NVarChar).Value = tbThanhPho.Text;
-                cmd.Parameters.Add("@daxoa", SqlDbType.Int).Value = 0;
-
+                cmd.Parameters.Add("@malichsu", SqlDbType.NChar).Value = tbIDLSDang.Text;
+                cmd.Parameters.Add("@machunha", SqlDbType.NChar).Value = tbIDMaChuNha.Text;
+                cmd.Parameters.Add("@manha", SqlDbType.NChar).Value = tbNha.Text;
+                cmd.Parameters.Add("@ngay", SqlDbType.DateTime).Value = tbNgDang.Text;
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Thêm thành công");
                 this.Close();
@@ -70,7 +66,7 @@ namespace SQL.nv.chuNha
             }
         }
 
-        private void btnHuy_Click(object sender, EventArgs e)
+        private void btnXoa_Click(object sender, EventArgs e)
         {
             this.Close();
         }

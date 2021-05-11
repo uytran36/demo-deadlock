@@ -37,6 +37,7 @@ namespace SQL.nv.chuNha
             this.btnCus = new System.Windows.Forms.Button();
             this.btnUser = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,7 +50,6 @@ namespace SQL.nv.chuNha
             this.labelHello.Size = new System.Drawing.Size(106, 17);
             this.labelHello.TabIndex = 15;
             this.labelHello.Text = "Xin chào, NV01";
-            this.labelHello.Click += new System.EventHandler(this.labelHello_Click);
             // 
             // dataGridView1
             // 
@@ -58,8 +58,9 @@ namespace SQL.nv.chuNha
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(1031, 366);
+            this.dataGridView1.Size = new System.Drawing.Size(1031, 310);
             this.dataGridView1.TabIndex = 14;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // labelList
             // 
@@ -80,6 +81,7 @@ namespace SQL.nv.chuNha
             this.btnOwner.TabIndex = 12;
             this.btnOwner.Text = "Chủ nhà";
             this.btnOwner.UseVisualStyleBackColor = true;
+            this.btnOwner.Click += new System.EventHandler(this.btnOwner_Click);
             // 
             // btnPost
             // 
@@ -90,6 +92,7 @@ namespace SQL.nv.chuNha
             this.btnPost.TabIndex = 11;
             this.btnPost.Text = "Bài đăng";
             this.btnPost.UseVisualStyleBackColor = true;
+            this.btnPost.Click += new System.EventHandler(this.btnPost_Click);
             // 
             // btnCus
             // 
@@ -100,6 +103,7 @@ namespace SQL.nv.chuNha
             this.btnCus.TabIndex = 10;
             this.btnCus.Text = "Khách hàng";
             this.btnCus.UseVisualStyleBackColor = true;
+            this.btnCus.Click += new System.EventHandler(this.btnCus_Click);
             // 
             // btnUser
             // 
@@ -121,11 +125,23 @@ namespace SQL.nv.chuNha
             this.btnLogout.Text = "Đăng xuất";
             this.btnLogout.UseVisualStyleBackColor = true;
             // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(468, 513);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(100, 28);
+            this.btnAdd.TabIndex = 16;
+            this.btnAdd.Text = "Thêm";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
             // dsChuNha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.labelHello);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.labelList);
@@ -153,5 +169,6 @@ namespace SQL.nv.chuNha
         private System.Windows.Forms.Button btnCus;
         private System.Windows.Forms.Button btnUser;
         private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btnAdd;
     }
 }

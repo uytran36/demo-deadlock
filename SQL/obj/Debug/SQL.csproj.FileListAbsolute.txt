@@ -100,3 +100,5 @@ D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.ctietKhac
 D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.dsHopDong.resources
 D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.themHopDong.resources
 D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.themLSXem.resources
+D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.chuNha.themChiTietLSDang.resources
+D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.chuNha.themChiTietLSBan.resources
