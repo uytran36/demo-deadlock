@@ -190,6 +190,12 @@
     <Compile Include="nv\baiDang\chiTietBaiDang.Designer.cs">
       <DependentUpon>chiTietBaiDang.cs</DependentUpon>
     </Compile>
+    <Compile Include="nv\baiDang\chiTietNhanXet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nv\baiDang\chiTietNhanXet.Designer.cs">
+      <DependentUpon>chiTietNhanXet.cs</DependentUpon>
+    </Compile>
     <Compile Include="nv\baiDang\dsBaiDang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,6 +213,12 @@
     </Compile>
     <Compile Include="nv\baiDang\themBaiDang.Designer.cs">
       <DependentUpon>themBaiDang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nv\baiDang\themChiTietNhanXet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nv\baiDang\themChiTietNhanXet.Designer.cs">
+      <DependentUpon>themChiTietNhanXet.cs</DependentUpon>
     </Compile>
     <Compile Include="nv\chuNha\ctietChuNha.cs">
       <SubType>Form</SubType>
@@ -402,6 +414,9 @@
     <EmbeddedResource Include="nv\baiDang\chiTietBaiDang.resx">
       <DependentUpon>chiTietBaiDang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="nv\baiDang\chiTietNhanXet.resx">
+      <DependentUpon>chiTietNhanXet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="nv\baiDang\dsBaiDang.resx">
       <DependentUpon>dsBaiDang.cs</DependentUpon>
     </EmbeddedResource>
@@ -410,6 +425,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="nv\baiDang\themBaiDang.resx">
       <DependentUpon>themBaiDang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nv\baiDang\themChiTietNhanXet.resx">
+      <DependentUpon>themChiTietNhanXet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="nv\chuNha\ctietChuNha.resx">
       <DependentUpon>ctietChuNha.cs</DependentUpon>

@@ -1,110 +1,6 @@
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\bin\Debug\SQL.exe.config
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\bin\Debug\SQL.exe
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\bin\Debug\SQL.pdb
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.cn.baiDang.chiTietBaiDang.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.cn.baiDang.dsBaiDang.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.cn.baiDang.dsNhanXet.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.cn.baiDang.themBaiDang.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.cn.chuNha.ctietChuNha.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.cn.chuNha.dsChuNha.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.cn.chuNha.dsLichSuBan.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.cn.chuNha.dsLichSuDang.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.cn.chuNha.dsNhaSoHuu.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.cn.chuNha.themChuNha.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.cn.khachHang.ctietHopDong.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.cn.khachHang.ctietKhachHang.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.cn.khachHang.dsHopDong.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.cn.khachHang.dsKhachHang.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.cn.khachHang.dsLichSuThue.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.cn.khachHang.dsLichSuXem.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.cn.khachHang.themKhachHang.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.cn.nhanVien.chiTietNhanVien.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.cn.nhanVien.dsNhanVien.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.cn.nhanVien.themNhanVien.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.dangNhap.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.baiDang.chiTietBaiDang.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.baiDang.dsBaiDang.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.baiDang.dsNhanXet.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.baiDang.themBaiDang.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.chuNha.ctietChuNha.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.chuNha.dsChuNha.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.chuNha.dsLichSuBan.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.chuNha.dsLichSuDang.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.chuNha.dsNhaSoHuu.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.chuNha.themChuNha.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.ctietLSXem.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.dsBaiDangTuongThich.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.dsKhachHang.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.ctietHopDong.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.dsLichSuThue.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.dsLichSuXem.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.Properties.Resources.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.csproj.GenerateResource.cache
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.csproj.CoreCompileInputs.cache
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.exe
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.pdb
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.csprojAssemblyReference.cache
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\bin\Debug\SQL.exe.config
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\bin\Debug\SQL.exe
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\bin\Debug\SQL.pdb
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.csprojAssemblyReference.cache
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.cn.baiDang.chiTietBaiDang.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.cn.baiDang.dsBaiDang.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.cn.baiDang.dsNhanXet.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.cn.baiDang.themBaiDang.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.cn.chuNha.ctietChuNha.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.cn.chuNha.dsChuNha.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.cn.chuNha.dsLichSuBan.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.cn.chuNha.dsLichSuDang.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.cn.chuNha.dsNhaSoHuu.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.cn.chuNha.themChuNha.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.cn.khachHang.ctietHopDong.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.cn.khachHang.ctietKhachHang.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.cn.khachHang.dsHopDong.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.cn.khachHang.dsKhachHang.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.cn.khachHang.dsLichSuThue.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.cn.khachHang.dsLichSuXem.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.cn.khachHang.themKhachHang.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.cn.nhanVien.chiTietNhanVien.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.cn.nhanVien.dsNhanVien.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.cn.nhanVien.themNhanVien.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.dangNhap.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.nv.baiDang.chiTietBaiDang.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.nv.baiDang.dsBaiDang.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.nv.baiDang.dsNhanXet.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.nv.baiDang.themBaiDang.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.nv.chuNha.ctietChuNha.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.nv.chuNha.dsChuNha.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.nv.chuNha.dsLichSuBan.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.nv.chuNha.dsLichSuDang.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.nv.chuNha.dsNhaSoHuu.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.nv.chuNha.themChuNha.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.ctietLSXem.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.dsBaiDangTuongThich.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.dsKhachHang.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.ctietKhachHang.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.dsHopDong.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.ctietHopDong.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.dsLichSuThue.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.dsLichSuXem.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.Properties.Resources.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.themHopDong.resources
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.csproj.GenerateResource.cache
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.csproj.CoreCompileInputs.cache
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.exe
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.pdb
-D:\Code\HQTCSDL\DoAn\sqltrans\SQL\obj\Debug\SQL.cn.baiDang.chiTietNhanXet.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.cn.baiDang.chiTietNhanXet.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.cn.baiDang.themChiTietNhanXet.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.ctietKhachHang.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.dsHopDong.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.themHopDong.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.themLSXem.resources
-<<<<<<< HEAD
 D:\SQL\sqltrans\SQL\bin\Debug\SQL.exe.config
 D:\SQL\sqltrans\SQL\bin\Debug\SQL.exe
 D:\SQL\sqltrans\SQL\bin\Debug\SQL.pdb
-D:\SQL\sqltrans\SQL\obj\Debug\SQL.csprojAssemblyReference.cache
 D:\SQL\sqltrans\SQL\obj\Debug\SQL.cn.baiDang.chiTietBaiDang.resources
 D:\SQL\sqltrans\SQL\obj\Debug\SQL.cn.baiDang.chiTietNhanXet.resources
 D:\SQL\sqltrans\SQL\obj\Debug\SQL.cn.baiDang.dsBaiDang.resources
@@ -129,15 +25,20 @@ D:\SQL\sqltrans\SQL\obj\Debug\SQL.cn.nhanVien.dsNhanVien.resources
 D:\SQL\sqltrans\SQL\obj\Debug\SQL.cn.nhanVien.themNhanVien.resources
 D:\SQL\sqltrans\SQL\obj\Debug\SQL.dangNhap.resources
 D:\SQL\sqltrans\SQL\obj\Debug\SQL.nv.baiDang.chiTietBaiDang.resources
+D:\SQL\sqltrans\SQL\obj\Debug\SQL.nv.baiDang.chiTietNhanXet.resources
 D:\SQL\sqltrans\SQL\obj\Debug\SQL.nv.baiDang.dsBaiDang.resources
 D:\SQL\sqltrans\SQL\obj\Debug\SQL.nv.baiDang.dsNhanXet.resources
 D:\SQL\sqltrans\SQL\obj\Debug\SQL.nv.baiDang.themBaiDang.resources
+D:\SQL\sqltrans\SQL\obj\Debug\SQL.nv.baiDang.themChiTietNhanXet.resources
 D:\SQL\sqltrans\SQL\obj\Debug\SQL.nv.chuNha.ctietChuNha.resources
 D:\SQL\sqltrans\SQL\obj\Debug\SQL.nv.chuNha.dsChuNha.resources
 D:\SQL\sqltrans\SQL\obj\Debug\SQL.nv.chuNha.dsLichSuBan.resources
 D:\SQL\sqltrans\SQL\obj\Debug\SQL.nv.chuNha.dsLichSuDang.resources
 D:\SQL\sqltrans\SQL\obj\Debug\SQL.nv.chuNha.dsNhaSoHuu.resources
+D:\SQL\sqltrans\SQL\obj\Debug\SQL.nv.chuNha.themChiTietLSBan.resources
+D:\SQL\sqltrans\SQL\obj\Debug\SQL.nv.chuNha.themChiTietLSDang.resources
 D:\SQL\sqltrans\SQL\obj\Debug\SQL.nv.chuNha.themChuNha.resources
+D:\SQL\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.ctietLSThue.resources
 D:\SQL\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.ctietLSXem.resources
 D:\SQL\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.dsBaiDangTuongThich.resources
 D:\SQL\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.dsKhachHang.resources
@@ -146,15 +47,11 @@ D:\SQL\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.dsHopDong.resources
 D:\SQL\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.ctietHopDong.resources
 D:\SQL\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.dsLichSuThue.resources
 D:\SQL\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.dsLichSuXem.resources
+D:\SQL\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.themLSThue.resources
 D:\SQL\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.themLSXem.resources
 D:\SQL\sqltrans\SQL\obj\Debug\SQL.Properties.Resources.resources
 D:\SQL\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.themHopDong.resources
 D:\SQL\sqltrans\SQL\obj\Debug\SQL.csproj.GenerateResource.cache
 D:\SQL\sqltrans\SQL\obj\Debug\SQL.exe
 D:\SQL\sqltrans\SQL\obj\Debug\SQL.pdb
-D:\SQL\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.themLSThue.resources
-D:\SQL\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.ctietLSThue.resources
-=======
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.chuNha.themChiTietLSDang.resources
-D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.chuNha.themChiTietLSBan.resources
->>>>>>> f3a30fc45b8ebeaa12c477fe6c4da21ed99c5886
+D:\SQL\sqltrans\SQL\obj\Debug\SQL.csprojAssemblyReference.cache
