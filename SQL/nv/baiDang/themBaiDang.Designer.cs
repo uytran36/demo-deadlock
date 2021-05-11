@@ -135,13 +135,13 @@ namespace SQL.nv.baiDang
             // 
             // labelHello
             // 
-            this.labelHello.AutoSize = true;
-            this.labelHello.Location = new System.Drawing.Point(47, 15);
-            this.labelHello.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelHello.Name = "labelHello";
-            this.labelHello.Size = new System.Drawing.Size(158, 17);
-            this.labelHello.TabIndex = 215;
-            this.labelHello.Text = "Xin chào, CHINHANH01";
+            //this.labelHello.AutoSize = true;
+            //this.labelHello.Location = new System.Drawing.Point(47, 15);
+            //this.labelHello.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            //this.labelHello.Name = "labelHello";
+            //this.labelHello.Size = new System.Drawing.Size(158, 17);
+            //this.labelHello.TabIndex = 215;
+            //this.labelHello.Text = "Xin chào, CHINHANH01";
             // 
             // btnUser
             // 

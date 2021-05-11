@@ -33,9 +33,9 @@
             this.btnOwner = new System.Windows.Forms.Button();
             this.btnPost = new System.Windows.Forms.Button();
             this.btnCus = new System.Windows.Forms.Button();
-            this.btnHopDong = new System.Windows.Forms.Button();
+            this.btnLuu = new System.Windows.Forms.Button();
             this.btnUser = new System.Windows.Forms.Button();
-            this.btnLichSuXem = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.tbMaNhanVien = new System.Windows.Forms.TextBox();
             this.tbThoiHan = new System.Windows.Forms.TextBox();
@@ -96,14 +96,15 @@
             this.btnCus.Text = "Khách hàng";
             this.btnCus.UseVisualStyleBackColor = true;
             // 
-            // btnHopDong
+            // btnLuu
             // 
-            this.btnHopDong.Location = new System.Drawing.Point(278, 403);
-            this.btnHopDong.Name = "btnHopDong";
-            this.btnHopDong.Size = new System.Drawing.Size(75, 23);
-            this.btnHopDong.TabIndex = 18;
-            this.btnHopDong.Text = "Lưu";
-            this.btnHopDong.UseVisualStyleBackColor = true;
+            this.btnLuu.Location = new System.Drawing.Point(278, 403);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(75, 23);
+            this.btnLuu.TabIndex = 18;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnUser
             // 
@@ -114,14 +115,15 @@
             this.btnUser.Text = "Cá nhân";
             this.btnUser.UseVisualStyleBackColor = true;
             // 
-            // btnLichSuXem
+            // btnXoa
             // 
-            this.btnLichSuXem.Location = new System.Drawing.Point(440, 403);
-            this.btnLichSuXem.Name = "btnLichSuXem";
-            this.btnLichSuXem.Size = new System.Drawing.Size(75, 23);
-            this.btnLichSuXem.TabIndex = 20;
-            this.btnLichSuXem.Text = "Xóa";
-            this.btnLichSuXem.UseVisualStyleBackColor = true;
+            this.btnXoa.Location = new System.Drawing.Point(440, 403);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(75, 23);
+            this.btnXoa.TabIndex = 20;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnLogout
             // 
@@ -250,9 +252,9 @@
             this.Controls.Add(this.btnOwner);
             this.Controls.Add(this.btnPost);
             this.Controls.Add(this.btnCus);
-            this.Controls.Add(this.btnHopDong);
+            this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.btnUser);
-            this.Controls.Add(this.btnLichSuXem);
+            this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnLogout);
             this.Name = "ctietHopDong";
             this.Text = "Form5";
@@ -267,9 +269,9 @@
         private System.Windows.Forms.Button btnOwner;
         private System.Windows.Forms.Button btnPost;
         private System.Windows.Forms.Button btnCus;
-        private System.Windows.Forms.Button btnHopDong;
+        private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnUser;
-        private System.Windows.Forms.Button btnLichSuXem;
+        private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.TextBox tbMaNhanVien;
         private System.Windows.Forms.TextBox tbThoiHan;

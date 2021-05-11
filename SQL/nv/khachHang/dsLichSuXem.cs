@@ -19,7 +19,22 @@ namespace SQL.nv.khachHang
         public dsLichSuXem()
         {
             InitializeComponent();
-            
+            string cnstr = @"Data Source =.; Initial Catalog = qlnd; Integrated Security = True";
+            SqlConnection cn = new SqlConnection(cnstr);
+
+            SqlCommand cmd = new SqlCommand("sp_dirtyRead_lichSuXem2", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cn.Open();
+            int i = cmd.ExecuteNonQuery();
+
+            cn.Close();
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+            cn.Close();
         }
         private void dsLichSuXem_load(object sender, EventArgs e)
         {
@@ -60,7 +75,7 @@ namespace SQL.nv.khachHang
                 var frm_ctLSXem = new ctietLSXem(maXem, maKH, maNha, ngayXem);
                 frm_ctLSXem.Location = this.Location;
                 frm_ctLSXem.StartPosition = FormStartPosition.Manual;
-                frm_ctLSXem.FormClosing += delegate { this.Show(); };
+                frm_ctLSXem.FormClosing += delegate { this.Show(); this.dsLichSuXem_load(null, null); };
                 frm_ctLSXem.Show();
                 this.Hide();
             }
@@ -77,6 +92,11 @@ namespace SQL.nv.khachHang
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void btnTaiLai_Click(object sender, EventArgs e)
         {
             string cnstr = @"Data Source =.; Initial Catalog = qlnd; Integrated Security = True";
             SqlConnection cn = new SqlConnection(cnstr);

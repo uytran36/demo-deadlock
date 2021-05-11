@@ -37,6 +37,7 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnUser = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
+            this.btn_taiLai = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -124,6 +125,16 @@
             this.btnLogout.Text = "Đăng xuất";
             this.btnLogout.UseVisualStyleBackColor = true;
             // 
+            // btn_taiLai
+            // 
+            this.btn_taiLai.Location = new System.Drawing.Point(713, 416);
+            this.btn_taiLai.Name = "btn_taiLai";
+            this.btn_taiLai.Size = new System.Drawing.Size(75, 23);
+            this.btn_taiLai.TabIndex = 16;
+            this.btn_taiLai.Text = "Tải lại";
+            this.btn_taiLai.UseVisualStyleBackColor = true;
+            this.btn_taiLai.Click += new System.EventHandler(this.btnTaiLai_Click);
+            // 
             // dsLichSuXem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -135,6 +146,7 @@
             this.Controls.Add(this.btnOwner);
             this.Controls.Add(this.btnPost);
             this.Controls.Add(this.btnCus);
+            this.Controls.Add(this.btn_taiLai);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnUser);
             this.Controls.Add(this.btnLogout);
@@ -158,5 +170,6 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnUser;
         private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btn_taiLai;
     }
 }

@@ -39,7 +39,7 @@ namespace SQL.nv.khachHang
             cmd.Parameters.Add("@ngayXem", SqlDbType.DateTime).Value = DateTime.Parse(tbNgayXem.Text);
             cn.Open();
 
-            int i = cmd.ExecuteNonQuery();
+            cmd.ExecuteNonQuery();
 
             cn.Close();
 
