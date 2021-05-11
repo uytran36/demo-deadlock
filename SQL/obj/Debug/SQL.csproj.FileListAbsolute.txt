@@ -100,6 +100,7 @@ D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.ctietKhac
 D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.dsHopDong.resources
 D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.themHopDong.resources
 D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.themLSXem.resources
+<<<<<<< HEAD
 D:\SQL\sqltrans\SQL\bin\Debug\SQL.exe.config
 D:\SQL\sqltrans\SQL\bin\Debug\SQL.exe
 D:\SQL\sqltrans\SQL\bin\Debug\SQL.pdb
@@ -153,3 +154,7 @@ D:\SQL\sqltrans\SQL\obj\Debug\SQL.exe
 D:\SQL\sqltrans\SQL\obj\Debug\SQL.pdb
 D:\SQL\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.themLSThue.resources
 D:\SQL\sqltrans\SQL\obj\Debug\SQL.nv.khachHang.ctietLSThue.resources
+=======
+D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.chuNha.themChiTietLSDang.resources
+D:\LECONS-KHTN\HQT CSDL\DoAnTH\sqltrans\SQL\obj\Debug\SQL.nv.chuNha.themChiTietLSBan.resources
+>>>>>>> f3a30fc45b8ebeaa12c477fe6c4da21ed99c5886

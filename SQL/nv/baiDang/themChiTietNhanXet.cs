@@ -1,6 +1,5 @@
-﻿using SQL.cn.chuNha;
-using SQL.cn.khachHang;
-using SQL.cn.nhanVien;
+﻿using SQL.nv.chuNha;
+using SQL.nv.khachHang;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SQL.cn.baiDang
+namespace SQL.nv.baiDang
 {
     public partial class themChiTietNhanXet : Form
     {
@@ -31,6 +30,16 @@ namespace SQL.cn.baiDang
             this.Hide();
         }
 
+        private void btnPost_Click(object sender, EventArgs e)
+        {
+            var frm_baiDang = new dsBaiDang();
+            frm_baiDang.Location = this.Location;
+            frm_baiDang.StartPosition = FormStartPosition.Manual;
+            frm_baiDang.FormClosing += delegate { this.Show(); };
+            frm_baiDang.Show();
+            this.Hide();
+        }
+
         private void btnOwner_Click(object sender, EventArgs e)
         {
             var frm_ChuNha = new dsChuNha();
@@ -41,22 +50,12 @@ namespace SQL.cn.baiDang
             this.Hide();
         }
 
-        private void btnStaff_Click(object sender, EventArgs e)
-        {
-            var frm_NhanVien = new dsNhanVien();
-            frm_NhanVien.Location = this.Location;
-            frm_NhanVien.StartPosition = FormStartPosition.Manual;
-            frm_NhanVien.FormClosing += delegate { this.Show(); };
-            frm_NhanVien.Show();
-            this.Hide();
-        }
-
         private void btnLuu_Click(object sender, EventArgs e)
         {
             string cnstr = @"Data Source =.; Initial Catalog = qlnd; Integrated Security = True"; ;
             SqlConnection cn = new SqlConnection(cnstr);
             SqlCommand cmd;
-            
+
             if (tbIDMaNha.Text == "" || tbIDNhanXet.Text == "" || tbKhachHang.Text == "" || tbNoiDung.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
@@ -80,16 +79,6 @@ namespace SQL.cn.baiDang
         private void btnXoa_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void btnPost_Click(object sender, EventArgs e)
-        {
-            var frm_baiDang = new dsBaiDang();
-            frm_baiDang.Location = this.Location;
-            frm_baiDang.StartPosition = FormStartPosition.Manual;
-            frm_baiDang.FormClosing += delegate { this.Show(); };
-            frm_baiDang.Show();
-            this.Hide();
         }
     }
 }

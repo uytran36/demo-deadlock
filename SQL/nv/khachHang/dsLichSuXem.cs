@@ -106,7 +106,7 @@ namespace SQL.nv.khachHang
             string cnstr = @"Data Source =.; Initial Catalog = qlnd; Integrated Security = True";
             SqlConnection cn = new SqlConnection(cnstr);
 
-            SqlCommand cmd = new SqlCommand("sp_dirtyRead_lichSuXem2", cn);
+            SqlCommand cmd = new SqlCommand("sp_phantom_lsXem", cn);
             cmd.CommandType = CommandType.StoredProcedure;
 
             cn.Open();

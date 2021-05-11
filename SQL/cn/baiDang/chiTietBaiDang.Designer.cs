@@ -93,6 +93,7 @@ namespace SQL.cn.baiDang
             this.btnXoa.TabIndex = 185;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnLuu
             // 

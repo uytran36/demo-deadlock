@@ -80,6 +80,7 @@ namespace SQL.cn.baiDang
             this.btnPost.TabIndex = 119;
             this.btnPost.Text = "Bài đăng";
             this.btnPost.UseVisualStyleBackColor = true;
+            this.btnPost.Click += new System.EventHandler(this.btnPost_Click);
             // 
             // btnCus
             // 

@@ -32,12 +32,13 @@ namespace SQL.nv.baiDang
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.labelList = new System.Windows.Forms.Label();
             this.btnOwner = new System.Windows.Forms.Button();
-            this.btnStaff = new System.Windows.Forms.Button();
             this.btnPost = new System.Windows.Forms.Button();
             this.btnCus = new System.Windows.Forms.Button();
             this.labelHello = new System.Windows.Forms.Label();
             this.btnUser = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,6 +51,7 @@ namespace SQL.nv.baiDang
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(1031, 313);
             this.dataGridView1.TabIndex = 34;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // labelList
             // 
@@ -63,33 +65,25 @@ namespace SQL.nv.baiDang
             // 
             // btnOwner
             // 
-            this.btnOwner.Location = new System.Drawing.Point(557, 49);
+            this.btnOwner.Location = new System.Drawing.Point(831, 49);
             this.btnOwner.Margin = new System.Windows.Forms.Padding(4);
             this.btnOwner.Name = "btnOwner";
             this.btnOwner.Size = new System.Drawing.Size(251, 64);
             this.btnOwner.TabIndex = 211;
             this.btnOwner.Text = "Chủ nhà";
             this.btnOwner.UseVisualStyleBackColor = true;
-            // 
-            // btnStaff
-            // 
-            this.btnStaff.Location = new System.Drawing.Point(816, 49);
-            this.btnStaff.Margin = new System.Windows.Forms.Padding(4);
-            this.btnStaff.Name = "btnStaff";
-            this.btnStaff.Size = new System.Drawing.Size(269, 64);
-            this.btnStaff.TabIndex = 209;
-            this.btnStaff.Text = "Nhân viên";
-            this.btnStaff.UseVisualStyleBackColor = true;
+            this.btnOwner.Click += new System.EventHandler(this.btnOwner_Click);
             // 
             // btnPost
             // 
-            this.btnPost.Location = new System.Drawing.Point(310, 49);
+            this.btnPost.Location = new System.Drawing.Point(460, 49);
             this.btnPost.Margin = new System.Windows.Forms.Padding(4);
             this.btnPost.Name = "btnPost";
             this.btnPost.Size = new System.Drawing.Size(239, 64);
             this.btnPost.TabIndex = 210;
             this.btnPost.Text = "Bài đăng";
             this.btnPost.UseVisualStyleBackColor = true;
+            this.btnPost.Click += new System.EventHandler(this.btnPost_Click);
             // 
             // btnCus
             // 
@@ -100,6 +94,7 @@ namespace SQL.nv.baiDang
             this.btnCus.TabIndex = 208;
             this.btnCus.Text = "Khách hàng";
             this.btnCus.UseVisualStyleBackColor = true;
+            this.btnCus.Click += new System.EventHandler(this.btnCus_Click);
             // 
             // labelHello
             // 
@@ -107,9 +102,9 @@ namespace SQL.nv.baiDang
             this.labelHello.Location = new System.Drawing.Point(48, 20);
             this.labelHello.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelHello.Name = "labelHello";
-            this.labelHello.Size = new System.Drawing.Size(158, 17);
+            this.labelHello.Size = new System.Drawing.Size(106, 17);
             this.labelHello.TabIndex = 207;
-            this.labelHello.Text = "Xin chào, CHINHANH01";
+            this.labelHello.Text = "Xin chào, NV01";
             // 
             // btnUser
             // 
@@ -131,13 +126,36 @@ namespace SQL.nv.baiDang
             this.btnLogout.Text = "Đăng xuất";
             this.btnLogout.UseVisualStyleBackColor = true;
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Location = new System.Drawing.Point(396, 509);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(100, 28);
+            this.btnRefresh.TabIndex = 213;
+            this.btnRefresh.Text = "Tải lại";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(621, 509);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(100, 28);
+            this.btnAdd.TabIndex = 214;
+            this.btnAdd.Text = "Thêm";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
             // dsNhanXet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1113, 525);
+            this.ClientSize = new System.Drawing.Size(1113, 550);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnOwner);
-            this.Controls.Add(this.btnStaff);
             this.Controls.Add(this.btnPost);
             this.Controls.Add(this.btnCus);
             this.Controls.Add(this.labelHello);
@@ -147,6 +165,7 @@ namespace SQL.nv.baiDang
             this.Controls.Add(this.labelList);
             this.Name = "dsNhanXet";
             this.Text = "dsNhanXet";
+            this.Load += new System.EventHandler(this.dsNhanXet_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -158,11 +177,12 @@ namespace SQL.nv.baiDang
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label labelList;
         private System.Windows.Forms.Button btnOwner;
-        private System.Windows.Forms.Button btnStaff;
         private System.Windows.Forms.Button btnPost;
         private System.Windows.Forms.Button btnCus;
         private System.Windows.Forms.Label labelHello;
         private System.Windows.Forms.Button btnUser;
         private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.Button btnAdd;
     }
 }

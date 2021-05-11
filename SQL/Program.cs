@@ -19,7 +19,7 @@ namespace SQL
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new dsChuNha());
+            Application.Run(new dsNhanVien());
         }
     }
 }

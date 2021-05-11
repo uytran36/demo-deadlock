@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SQL.nv.chuNha;
+using SQL.nv.khachHang;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SQL.cn.baiDang
+namespace SQL.nv.baiDang
 {
     public partial class chiTietNhanXet : Form
     {
@@ -43,6 +45,36 @@ namespace SQL.cn.baiDang
             cn.Close();
 
             MessageBox.Show("Lưu thành công");
+        }
+
+        private void btnCus_Click(object sender, EventArgs e)
+        {
+            var frm_KhachHang = new dsKhachHang();
+            frm_KhachHang.Location = this.Location;
+            frm_KhachHang.StartPosition = FormStartPosition.Manual;
+            frm_KhachHang.FormClosing += delegate { this.Show(); };
+            frm_KhachHang.Show();
+            this.Hide();
+        }
+
+        private void btnPost_Click(object sender, EventArgs e)
+        {
+            var frm_baiDang = new dsBaiDang();
+            frm_baiDang.Location = this.Location;
+            frm_baiDang.StartPosition = FormStartPosition.Manual;
+            frm_baiDang.FormClosing += delegate { this.Show(); };
+            frm_baiDang.Show();
+            this.Hide();
+        }
+
+        private void btnOwner_Click(object sender, EventArgs e)
+        {
+            var frm_ChuNha = new dsChuNha();
+            frm_ChuNha.Location = this.Location;
+            frm_ChuNha.StartPosition = FormStartPosition.Manual;
+            frm_ChuNha.FormClosing += delegate { this.Show(); };
+            frm_ChuNha.Show();
+            this.Hide();
         }
 
         private void btnXoa_Click(object sender, EventArgs e)

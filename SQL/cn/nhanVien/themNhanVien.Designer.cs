@@ -57,6 +57,8 @@ namespace SQL.cn.nhanVien
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
+            this.tbGioiTinh = new System.Windows.Forms.TextBox();
+            this.labelGT = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnOwner
@@ -68,6 +70,7 @@ namespace SQL.cn.nhanVien
             this.btnOwner.TabIndex = 263;
             this.btnOwner.Text = "Chủ nhà";
             this.btnOwner.UseVisualStyleBackColor = true;
+            this.btnOwner.Click += new System.EventHandler(this.btnOwner_Click);
             // 
             // btnStaff
             // 
@@ -88,6 +91,7 @@ namespace SQL.cn.nhanVien
             this.btnPost.TabIndex = 262;
             this.btnPost.Text = "Bài đăng";
             this.btnPost.UseVisualStyleBackColor = true;
+            this.btnPost.Click += new System.EventHandler(this.btnPost_Click);
             // 
             // btnCus
             // 
@@ -98,6 +102,7 @@ namespace SQL.cn.nhanVien
             this.btnCus.TabIndex = 260;
             this.btnCus.Text = "Khách hàng";
             this.btnCus.UseVisualStyleBackColor = true;
+            this.btnCus.Click += new System.EventHandler(this.btnCus_Click);
             // 
             // labelDetail
             // 
@@ -199,7 +204,7 @@ namespace SQL.cn.nhanVien
             // 
             // tbNgaySinh
             // 
-            this.tbNgaySinh.Location = new System.Drawing.Point(529, 248);
+            this.tbNgaySinh.Location = new System.Drawing.Point(529, 218);
             this.tbNgaySinh.Margin = new System.Windows.Forms.Padding(4);
             this.tbNgaySinh.Name = "tbNgaySinh";
             this.tbNgaySinh.Size = new System.Drawing.Size(279, 22);
@@ -207,7 +212,7 @@ namespace SQL.cn.nhanVien
             // 
             // tbName
             // 
-            this.tbName.Location = new System.Drawing.Point(529, 215);
+            this.tbName.Location = new System.Drawing.Point(529, 188);
             this.tbName.Margin = new System.Windows.Forms.Padding(4);
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(279, 22);
@@ -215,7 +220,7 @@ namespace SQL.cn.nhanVien
             // 
             // tbIDNhanVien
             // 
-            this.tbIDNhanVien.Location = new System.Drawing.Point(529, 183);
+            this.tbIDNhanVien.Location = new System.Drawing.Point(529, 156);
             this.tbIDNhanVien.Margin = new System.Windows.Forms.Padding(4);
             this.tbIDNhanVien.Name = "tbIDNhanVien";
             this.tbIDNhanVien.Size = new System.Drawing.Size(279, 22);
@@ -234,7 +239,7 @@ namespace SQL.cn.nhanVien
             // labelNgaySinh
             // 
             this.labelNgaySinh.AutoSize = true;
-            this.labelNgaySinh.Location = new System.Drawing.Point(313, 248);
+            this.labelNgaySinh.Location = new System.Drawing.Point(313, 218);
             this.labelNgaySinh.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelNgaySinh.Name = "labelNgaySinh";
             this.labelNgaySinh.Size = new System.Drawing.Size(75, 17);
@@ -254,7 +259,7 @@ namespace SQL.cn.nhanVien
             // labelName
             // 
             this.labelName.AutoSize = true;
-            this.labelName.Location = new System.Drawing.Point(313, 214);
+            this.labelName.Location = new System.Drawing.Point(313, 187);
             this.labelName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(103, 17);
@@ -264,7 +269,7 @@ namespace SQL.cn.nhanVien
             // labelIDNhanVien
             // 
             this.labelIDNhanVien.AutoSize = true;
-            this.labelIDNhanVien.Location = new System.Drawing.Point(313, 183);
+            this.labelIDNhanVien.Location = new System.Drawing.Point(313, 156);
             this.labelIDNhanVien.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelIDNhanVien.Name = "labelIDNhanVien";
             this.labelIDNhanVien.Size = new System.Drawing.Size(97, 17);
@@ -310,6 +315,7 @@ namespace SQL.cn.nhanVien
             this.btnHuy.TabIndex = 264;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnLuu
             // 
@@ -320,12 +326,33 @@ namespace SQL.cn.nhanVien
             this.btnLuu.TabIndex = 265;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
+            // 
+            // tbGioiTinh
+            // 
+            this.tbGioiTinh.Location = new System.Drawing.Point(529, 250);
+            this.tbGioiTinh.Margin = new System.Windows.Forms.Padding(4);
+            this.tbGioiTinh.Name = "tbGioiTinh";
+            this.tbGioiTinh.Size = new System.Drawing.Size(279, 22);
+            this.tbGioiTinh.TabIndex = 267;
+            // 
+            // labelGT
+            // 
+            this.labelGT.AutoSize = true;
+            this.labelGT.Location = new System.Drawing.Point(313, 250);
+            this.labelGT.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelGT.Name = "labelGT";
+            this.labelGT.Size = new System.Drawing.Size(64, 17);
+            this.labelGT.TabIndex = 266;
+            this.labelGT.Text = "Giới tính:";
             // 
             // themNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1093, 548);
+            this.Controls.Add(this.tbGioiTinh);
+            this.Controls.Add(this.labelGT);
             this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.btnOwner);
@@ -391,5 +418,7 @@ namespace SQL.cn.nhanVien
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.TextBox tbGioiTinh;
+        private System.Windows.Forms.Label labelGT;
     }
 }
