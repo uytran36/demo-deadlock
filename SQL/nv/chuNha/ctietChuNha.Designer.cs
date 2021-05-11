@@ -163,7 +163,6 @@ namespace SQL.nv.chuNha
             this.labelHello.Size = new System.Drawing.Size(106, 17);
             this.labelHello.TabIndex = 26;
             this.labelHello.Text = "Xin chào, NV01";
-            this.labelHello.Click += new System.EventHandler(this.labelHello_Click);
             // 
             // btnOwner
             // 
@@ -184,6 +183,7 @@ namespace SQL.nv.chuNha
             this.btnPost.TabIndex = 24;
             this.btnPost.Text = "Bài đăng";
             this.btnPost.UseVisualStyleBackColor = true;
+            this.btnPost.Click += new System.EventHandler(this.btnPost_Click);
             // 
             // btnCus
             // 
@@ -194,6 +194,7 @@ namespace SQL.nv.chuNha
             this.btnCus.TabIndex = 23;
             this.btnCus.Text = "Khách hàng";
             this.btnCus.UseVisualStyleBackColor = true;
+            this.btnCus.Click += new System.EventHandler(this.btnCus_Click);
             // 
             // btnUser
             // 
@@ -217,13 +218,14 @@ namespace SQL.nv.chuNha
             // 
             // btnDSN
             // 
-            this.btnDSN.Location = new System.Drawing.Point(588, 402);
+            this.btnDSN.Location = new System.Drawing.Point(597, 402);
             this.btnDSN.Margin = new System.Windows.Forms.Padding(4);
             this.btnDSN.Name = "btnDSN";
             this.btnDSN.Size = new System.Drawing.Size(120, 28);
             this.btnDSN.TabIndex = 85;
             this.btnDSN.Text = "Danh sách nhà";
             this.btnDSN.UseVisualStyleBackColor = true;
+            this.btnDSN.Click += new System.EventHandler(this.btnDSN_Click);
             // 
             // button1
             // 
@@ -234,6 +236,7 @@ namespace SQL.nv.chuNha
             this.button1.TabIndex = 80;
             this.button1.Text = "Hợp đồng";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnXoa
             // 
@@ -244,16 +247,18 @@ namespace SQL.nv.chuNha
             this.btnXoa.TabIndex = 82;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnLichSuBan
             // 
-            this.btnLichSuBan.Location = new System.Drawing.Point(480, 402);
+            this.btnLichSuBan.Location = new System.Drawing.Point(489, 402);
             this.btnLichSuBan.Margin = new System.Windows.Forms.Padding(4);
             this.btnLichSuBan.Name = "btnLichSuBan";
             this.btnLichSuBan.Size = new System.Drawing.Size(100, 28);
             this.btnLichSuBan.TabIndex = 81;
             this.btnLichSuBan.Text = "Lịch sử bán";
             this.btnLichSuBan.UseVisualStyleBackColor = true;
+            this.btnLichSuBan.Click += new System.EventHandler(this.btnLichSuBan_Click);
             // 
             // btnLuu
             // 
@@ -264,16 +269,18 @@ namespace SQL.nv.chuNha
             this.btnLuu.TabIndex = 83;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnLichSuDang
             // 
             this.btnLichSuDang.Location = new System.Drawing.Point(372, 402);
             this.btnLichSuDang.Margin = new System.Windows.Forms.Padding(4);
             this.btnLichSuDang.Name = "btnLichSuDang";
-            this.btnLichSuDang.Size = new System.Drawing.Size(100, 28);
+            this.btnLichSuDang.Size = new System.Drawing.Size(109, 28);
             this.btnLichSuDang.TabIndex = 84;
             this.btnLichSuDang.Text = "Lịch sử đăng";
             this.btnLichSuDang.UseVisualStyleBackColor = true;
+            this.btnLichSuDang.Click += new System.EventHandler(this.btnLichSuDang_Click);
             // 
             // ctietChuNha
             // 

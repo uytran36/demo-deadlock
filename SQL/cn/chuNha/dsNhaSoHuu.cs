@@ -25,16 +25,22 @@ namespace SQL.cn.chuNha
 
         private void button1_Click(object sender, EventArgs e)
         {
+            var frm_themNha = new themBaiDang();
+            frm_themNha.Location = this.Location;
+            frm_themNha.StartPosition = FormStartPosition.Manual;
+            frm_themNha.FormClosing += delegate { this.Show(); };
+            frm_themNha.Show();
+            this.Hide();
+        }
+
+        private void btnCus_Click(object sender, EventArgs e)
+        {
             var frm_KhachHang = new dsKhachHang();
             frm_KhachHang.Location = this.Location;
             frm_KhachHang.StartPosition = FormStartPosition.Manual;
             frm_KhachHang.FormClosing += delegate { this.Show(); };
             frm_KhachHang.Show();
             this.Hide();
-        }
-
-        private void btnCus_Click(object sender, EventArgs e)
-        {
         }
 
         private void btnPost_Click(object sender, EventArgs e)

@@ -56,7 +56,7 @@ namespace SQL.cn.nhanVien
             var frm_ThemNV = new themNhanVien();
             frm_ThemNV.Location = this.Location;
             frm_ThemNV.StartPosition = FormStartPosition.Manual;
-            frm_ThemNV.FormClosing += delegate { this.Show(); };
+            frm_ThemNV.FormClosing += delegate { this.Show(); this.dsNhanVien_Load(null, null); };
             frm_ThemNV.Show();
             this.Hide();
         }
@@ -81,25 +81,28 @@ namespace SQL.cn.nhanVien
 
         private void dataGridViewNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            string manhanvien = dataGridViewNhanVien.Rows[e.RowIndex].Cells["MaNhanVien"].FormattedValue.ToString();
-            string tennhanvien = dataGridViewNhanVien.Rows[e.RowIndex].Cells["TenNhanVien"].FormattedValue.ToString();
-            string ngaysinh = dataGridViewNhanVien.Rows[e.RowIndex].Cells["NgaySinh"].FormattedValue.ToString();
-            string gioitinh = dataGridViewNhanVien.Rows[e.RowIndex].Cells["GioiTinh"].FormattedValue.ToString();
-            string duong = dataGridViewNhanVien.Rows[e.RowIndex].Cells["Duong"].FormattedValue.ToString();
-            string quan = dataGridViewNhanVien.Rows[e.RowIndex].Cells["Quan"].FormattedValue.ToString();
-            string thanhpho = dataGridViewNhanVien.Rows[e.RowIndex].Cells["ThanhPho"].FormattedValue.ToString();
-            string khuvuc = dataGridViewNhanVien.Rows[e.RowIndex].Cells["KhuVuc"].FormattedValue.ToString();
-            string sodienthoai = dataGridViewNhanVien.Rows[e.RowIndex].Cells["SoDienThoai"].FormattedValue.ToString();
-            string machinhanh = dataGridViewNhanVien.Rows[e.RowIndex].Cells["MaChiNhanh"].FormattedValue.ToString();
+            if (dataGridViewNhanVien.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
+            {
+                string manhanvien = dataGridViewNhanVien.Rows[e.RowIndex].Cells["MaNhanVien"].FormattedValue.ToString();
+                string tennhanvien = dataGridViewNhanVien.Rows[e.RowIndex].Cells["TenNhanVien"].FormattedValue.ToString();
+                string ngaysinh = dataGridViewNhanVien.Rows[e.RowIndex].Cells["NgaySinh"].FormattedValue.ToString();
+                string gioitinh = dataGridViewNhanVien.Rows[e.RowIndex].Cells["GioiTinh"].FormattedValue.ToString();
+                string duong = dataGridViewNhanVien.Rows[e.RowIndex].Cells["Duong"].FormattedValue.ToString();
+                string quan = dataGridViewNhanVien.Rows[e.RowIndex].Cells["Quan"].FormattedValue.ToString();
+                string thanhpho = dataGridViewNhanVien.Rows[e.RowIndex].Cells["ThanhPho"].FormattedValue.ToString();
+                string khuvuc = dataGridViewNhanVien.Rows[e.RowIndex].Cells["KhuVuc"].FormattedValue.ToString();
+                string sodienthoai = dataGridViewNhanVien.Rows[e.RowIndex].Cells["SoDienThoai"].FormattedValue.ToString();
+                string machinhanh = dataGridViewNhanVien.Rows[e.RowIndex].Cells["MaChiNhanh"].FormattedValue.ToString();
 
-            var frm_chiTietBD = new chiTietNhanVien(manhanvien, tennhanvien, ngaysinh, gioitinh,
-                                        duong, quan, thanhpho, khuvuc, sodienthoai, machinhanh);
-            frm_chiTietBD.Location = this.Location;
-            frm_chiTietBD.StartPosition = FormStartPosition.Manual;
-            frm_chiTietBD.FormClosing += delegate { this.Show(); this.dsNhanVien_Load(null, null); };
-            frm_chiTietBD.Show();
+                var frm_chiTietBD = new chiTietNhanVien(manhanvien, tennhanvien, ngaysinh, gioitinh,
+                                            duong, quan, thanhpho, khuvuc, sodienthoai, machinhanh);
+                frm_chiTietBD.Location = this.Location;
+                frm_chiTietBD.StartPosition = FormStartPosition.Manual;
+                frm_chiTietBD.FormClosing += delegate { this.Show(); this.dsNhanVien_Load(null, null); };
+                frm_chiTietBD.Show();
 
-            this.Hide();
+                this.Hide();
+            }
         }
     }
 }

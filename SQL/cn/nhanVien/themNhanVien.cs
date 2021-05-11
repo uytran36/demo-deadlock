@@ -39,7 +39,7 @@ namespace SQL.cn.nhanVien
             else
             {
                 cn.Open();
-                cmd = new SqlCommand("addBD", cn);
+                cmd = new SqlCommand("sp_addnv", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@add1", SqlDbType.NChar).Value = tbIDNhanVien.Text;
                 cmd.Parameters.Add("@add2", SqlDbType.NVarChar).Value = tbName.Text;
