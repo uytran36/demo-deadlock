@@ -60,6 +60,8 @@ namespace SQL.cn.nhanVien
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnLSXN = new System.Windows.Forms.Button();
             this.btnLSThue = new System.Windows.Forms.Button();
+            this.tbGioiTinh = new System.Windows.Forms.TextBox();
+            this.labelGT = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnOwner
@@ -71,6 +73,7 @@ namespace SQL.cn.nhanVien
             this.btnOwner.TabIndex = 237;
             this.btnOwner.Text = "Chủ nhà";
             this.btnOwner.UseVisualStyleBackColor = true;
+            this.btnOwner.Click += new System.EventHandler(this.btnOwner_Click);
             // 
             // btnStaff
             // 
@@ -91,6 +94,7 @@ namespace SQL.cn.nhanVien
             this.btnPost.TabIndex = 236;
             this.btnPost.Text = "Bài đăng";
             this.btnPost.UseVisualStyleBackColor = true;
+            this.btnPost.Click += new System.EventHandler(this.btnPost_Click);
             // 
             // btnCus
             // 
@@ -101,6 +105,7 @@ namespace SQL.cn.nhanVien
             this.btnCus.TabIndex = 234;
             this.btnCus.Text = "Khách hàng";
             this.btnCus.UseVisualStyleBackColor = true;
+            this.btnCus.Click += new System.EventHandler(this.btnCus_Click);
             // 
             // labelDetail
             // 
@@ -121,6 +126,7 @@ namespace SQL.cn.nhanVien
             this.btnHopDong.TabIndex = 232;
             this.btnHopDong.Text = "Hợp đồng";
             this.btnHopDong.UseVisualStyleBackColor = true;
+            this.btnHopDong.Click += new System.EventHandler(this.btnHopDong_Click);
             // 
             // tbIDChiNhanh
             // 
@@ -232,7 +238,7 @@ namespace SQL.cn.nhanVien
             // 
             // tbNgaySinh
             // 
-            this.tbNgaySinh.Location = new System.Drawing.Point(531, 246);
+            this.tbNgaySinh.Location = new System.Drawing.Point(531, 218);
             this.tbNgaySinh.Margin = new System.Windows.Forms.Padding(4);
             this.tbNgaySinh.Name = "tbNgaySinh";
             this.tbNgaySinh.Size = new System.Drawing.Size(279, 22);
@@ -240,7 +246,7 @@ namespace SQL.cn.nhanVien
             // 
             // tbName
             // 
-            this.tbName.Location = new System.Drawing.Point(531, 213);
+            this.tbName.Location = new System.Drawing.Point(531, 188);
             this.tbName.Margin = new System.Windows.Forms.Padding(4);
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(279, 22);
@@ -248,7 +254,7 @@ namespace SQL.cn.nhanVien
             // 
             // tbIDNhanVien
             // 
-            this.tbIDNhanVien.Location = new System.Drawing.Point(531, 181);
+            this.tbIDNhanVien.Location = new System.Drawing.Point(531, 156);
             this.tbIDNhanVien.Margin = new System.Windows.Forms.Padding(4);
             this.tbIDNhanVien.Name = "tbIDNhanVien";
             this.tbIDNhanVien.Size = new System.Drawing.Size(279, 22);
@@ -267,7 +273,7 @@ namespace SQL.cn.nhanVien
             // labelNgaySinh
             // 
             this.labelNgaySinh.AutoSize = true;
-            this.labelNgaySinh.Location = new System.Drawing.Point(315, 246);
+            this.labelNgaySinh.Location = new System.Drawing.Point(315, 218);
             this.labelNgaySinh.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelNgaySinh.Name = "labelNgaySinh";
             this.labelNgaySinh.Size = new System.Drawing.Size(75, 17);
@@ -287,7 +293,7 @@ namespace SQL.cn.nhanVien
             // labelName
             // 
             this.labelName.AutoSize = true;
-            this.labelName.Location = new System.Drawing.Point(315, 212);
+            this.labelName.Location = new System.Drawing.Point(315, 187);
             this.labelName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(103, 17);
@@ -297,7 +303,7 @@ namespace SQL.cn.nhanVien
             // labelIDNhanVien
             // 
             this.labelIDNhanVien.AutoSize = true;
-            this.labelIDNhanVien.Location = new System.Drawing.Point(315, 181);
+            this.labelIDNhanVien.Location = new System.Drawing.Point(315, 156);
             this.labelIDNhanVien.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelIDNhanVien.Name = "labelIDNhanVien";
             this.labelIDNhanVien.Size = new System.Drawing.Size(97, 17);
@@ -343,6 +349,7 @@ namespace SQL.cn.nhanVien
             this.btnLSXN.TabIndex = 238;
             this.btnLSXN.Text = "Lịch sử xem nhà";
             this.btnLSXN.UseVisualStyleBackColor = true;
+            this.btnLSXN.Click += new System.EventHandler(this.btnLSXN_Click);
             // 
             // btnLSThue
             // 
@@ -353,12 +360,33 @@ namespace SQL.cn.nhanVien
             this.btnLSThue.TabIndex = 239;
             this.btnLSThue.Text = "Lịch sử thuê";
             this.btnLSThue.UseVisualStyleBackColor = true;
+            this.btnLSThue.Click += new System.EventHandler(this.btnLSThue_Click);
+            // 
+            // tbGioiTinh
+            // 
+            this.tbGioiTinh.Location = new System.Drawing.Point(531, 248);
+            this.tbGioiTinh.Margin = new System.Windows.Forms.Padding(4);
+            this.tbGioiTinh.Name = "tbGioiTinh";
+            this.tbGioiTinh.Size = new System.Drawing.Size(279, 22);
+            this.tbGioiTinh.TabIndex = 241;
+            // 
+            // labelGT
+            // 
+            this.labelGT.AutoSize = true;
+            this.labelGT.Location = new System.Drawing.Point(315, 248);
+            this.labelGT.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelGT.Name = "labelGT";
+            this.labelGT.Size = new System.Drawing.Size(64, 17);
+            this.labelGT.TabIndex = 240;
+            this.labelGT.Text = "Giới tính:";
             // 
             // chiTietNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1113, 548);
+            this.Controls.Add(this.tbGioiTinh);
+            this.Controls.Add(this.labelGT);
             this.Controls.Add(this.btnLSThue);
             this.Controls.Add(this.btnLSXN);
             this.Controls.Add(this.btnOwner);
@@ -430,5 +458,7 @@ namespace SQL.cn.nhanVien
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnLSXN;
         private System.Windows.Forms.Button btnLSThue;
+        private System.Windows.Forms.TextBox tbGioiTinh;
+        private System.Windows.Forms.Label labelGT;
     }
 }

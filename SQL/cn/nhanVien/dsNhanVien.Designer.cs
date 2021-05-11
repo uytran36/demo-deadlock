@@ -37,9 +37,9 @@ namespace SQL.cn.nhanVien
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.dataGridViewBaiDang = new System.Windows.Forms.DataGridView();
+            this.dataGridViewNhanVien = new System.Windows.Forms.DataGridView();
             this.labelList = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBaiDang)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNhanVien)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAdd
@@ -51,6 +51,7 @@ namespace SQL.cn.nhanVien
             this.btnAdd.TabIndex = 219;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnOwner
             // 
@@ -61,6 +62,7 @@ namespace SQL.cn.nhanVien
             this.btnOwner.TabIndex = 218;
             this.btnOwner.Text = "Chủ nhà";
             this.btnOwner.UseVisualStyleBackColor = true;
+            this.btnOwner.Click += new System.EventHandler(this.btnOwner_Click);
             // 
             // btnStaff
             // 
@@ -81,6 +83,7 @@ namespace SQL.cn.nhanVien
             this.btnPost.TabIndex = 217;
             this.btnPost.Text = "Bài đăng";
             this.btnPost.UseVisualStyleBackColor = true;
+            this.btnPost.Click += new System.EventHandler(this.btnPost_Click);
             // 
             // btnCus
             // 
@@ -91,6 +94,7 @@ namespace SQL.cn.nhanVien
             this.btnCus.TabIndex = 215;
             this.btnCus.Text = "Khách hàng";
             this.btnCus.UseVisualStyleBackColor = true;
+            this.btnCus.Click += new System.EventHandler(this.btnCus_Click);
             // 
             // label1
             // 
@@ -122,15 +126,16 @@ namespace SQL.cn.nhanVien
             this.button2.Text = "Đăng xuất";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // dataGridViewBaiDang
+            // dataGridViewNhanVien
             // 
-            this.dataGridViewBaiDang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewBaiDang.Location = new System.Drawing.Point(14, 156);
-            this.dataGridViewBaiDang.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridViewBaiDang.Name = "dataGridViewBaiDang";
-            this.dataGridViewBaiDang.RowHeadersWidth = 51;
-            this.dataGridViewBaiDang.Size = new System.Drawing.Size(1031, 366);
-            this.dataGridViewBaiDang.TabIndex = 211;
+            this.dataGridViewNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewNhanVien.Location = new System.Drawing.Point(14, 156);
+            this.dataGridViewNhanVien.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridViewNhanVien.Name = "dataGridViewNhanVien";
+            this.dataGridViewNhanVien.RowHeadersWidth = 51;
+            this.dataGridViewNhanVien.Size = new System.Drawing.Size(1031, 366);
+            this.dataGridViewNhanVien.TabIndex = 211;
+            this.dataGridViewNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewNhanVien_CellClick);
             // 
             // labelList
             // 
@@ -155,11 +160,12 @@ namespace SQL.cn.nhanVien
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.dataGridViewBaiDang);
+            this.Controls.Add(this.dataGridViewNhanVien);
             this.Controls.Add(this.labelList);
             this.Name = "dsNhanVien";
             this.Text = "dsNhanVien";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBaiDang)).EndInit();
+            this.Load += new System.EventHandler(this.dsNhanVien_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNhanVien)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -175,7 +181,7 @@ namespace SQL.cn.nhanVien
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dataGridViewBaiDang;
+        private System.Windows.Forms.DataGridView dataGridViewNhanVien;
         private System.Windows.Forms.Label labelList;
     }
 }
