@@ -72,22 +72,12 @@ namespace SQL.cn.baiDang
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            string cnstr = @"Data Source =.; Initial Catalog = qlnd; Integrated Security = True";
-            SqlConnection cn = new SqlConnection(cnstr);
-
-            SqlCommand cmd = new SqlCommand("sp_unrepeatableRead_tinhTrang", cn);
-            cmd.CommandType = CommandType.StoredProcedure;
-
-            cn.Open();
-            int i = cmd.ExecuteNonQuery();
-
-            cn.Close();
-
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dataGridViewBaiDang.DataSource = dt;
-            cn.Close();
+            var frm_ThemBD = new themBaiDang();
+            frm_ThemBD.Location = this.Location;
+            frm_ThemBD.StartPosition = FormStartPosition.Manual;
+            frm_ThemBD.FormClosing += delegate { this.Show(); };
+            frm_ThemBD.Show();
+            this.Hide();
         }
 
         private void dataGridViewBaiDang_CellClick(object sender, DataGridViewCellEventArgs e)

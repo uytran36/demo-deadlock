@@ -67,7 +67,7 @@ namespace SQL.cn.baiDang
             cn.Open();
             
             int i = cmd.ExecuteNonQuery();
-
+            MessageBox.Show("Lưu thành công");
             cn.Close();
 
         }

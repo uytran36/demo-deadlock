@@ -55,7 +55,12 @@ namespace SQL.cn.chuNha
       
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            
+            var frm_themCN = new themChuNha();
+            frm_themCN.Location = this.Location;
+            frm_themCN.StartPosition = FormStartPosition.Manual;
+            frm_themCN.FormClosing += delegate { this.Show(); };
+            frm_themCN.Show();
+            this.Hide();
         }
        
         private void dsChuNha_Load(object sender, EventArgs e)
@@ -101,5 +106,6 @@ namespace SQL.cn.chuNha
                 this.Hide();
             }
         }
+
     }
 }

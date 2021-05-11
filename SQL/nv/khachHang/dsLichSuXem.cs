@@ -19,6 +19,7 @@ namespace SQL.nv.khachHang
         public dsLichSuXem()
         {
             InitializeComponent();
+            
         }
         private void dsLichSuXem_load(object sender, EventArgs e)
         {

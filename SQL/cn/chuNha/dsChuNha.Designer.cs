@@ -140,7 +140,7 @@ namespace SQL.cn.chuNha
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(479, 513);
+            this.btnAdd.Location = new System.Drawing.Point(464, 513);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(100, 28);
