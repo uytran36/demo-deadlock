@@ -1,1 +1,2 @@
-sqltrans
+Demo SQL deadlock in MSSQL
+
